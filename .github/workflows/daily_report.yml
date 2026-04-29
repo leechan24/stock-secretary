@@ -2,9 +2,9 @@ name: Daily Stock AI Report
 
 on:
   schedule:
-    # 한국 시간(KST) 오전 06:30은 UTC 기준 전날 오후 21:30입니다.
-    - cron: '30 21 * * *' 
-  workflow_dispatch: # 언제든 수동으로 실행해볼 수 있는 버튼
+    # 한국 시간(KST) 오후 14:05은 UTC 기준 05:05입니다.
+    - cron: '5 5 * * *' 
+  workflow_dispatch: # 이 버튼을 누르면 지금 즉시 실행됩니다!
 
 jobs:
   build:
