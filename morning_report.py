@@ -5,12 +5,14 @@ import json
 import os
 import google.generativeai as genai
 
-# [중요] 보안을 위해 API 키를 직접 적지 않고 시스템 환경 변수에서 가져옵니다.
-# 로컬 테스트 시에는 터미널에 set GEMINI_API_KEY=내키 입력 필요
+# 1. 설정: 환경 변수에서 키들을 가져옵니다. (GitHub Secrets 설정 필수)
 api_key = os.getenv("GEMINI_API_KEY")
+telegram_token = os.getenv("TELEGRAM_BOT_TOKEN")
+telegram_chat_id = os.getenv("TELEGRAM_CHAT_ID")
+
 genai.configure(api_key=api_key)
 
-# 1. 미국 섹터 데이터 수집 함수
+# 2. 미국 섹터 데이터 수집 함수
 def get_us_sector_performance():
     print("🇺🇸 미장 섹터별 흐름 분석 중...")
     SECTOR_MAP = {
@@ -30,7 +32,7 @@ def get_us_sector_performance():
             continue
     return performance
 
-# 2. 한국 테마 데이터 수집 함수
+# 3. 한국 테마 데이터 수집 함수
 def get_kr_themes():
     print("🔍 국장 테마 수집 중...")
     url = "https://finance.naver.com/sise/theme.naver"
@@ -39,11 +41,11 @@ def get_kr_themes():
     soup = BeautifulSoup(res.text, 'html.parser')
     return [tag.text for tag in soup.select('.col_type1 a')[:15]]
 
-# 3. AI 애널리스트 분석 함수
+# 4. AI 애널리스트 분석 함수
 def ask_ai_analyst(us_data, kr_themes):
     print("🤖 AI 애널리스트가 맥락을 분석 중입니다...")
     
-    # 개발자님 환경에서 확인된 사용 가능한 모델을 사용합니다.
+    # 개발자님 환경에 최적화된 모델 선택
     target_model = 'models/gemini-2.5-flash' 
     model = genai.GenerativeModel(target_model)
     
@@ -66,10 +68,35 @@ def ask_ai_analyst(us_data, kr_themes):
     response = model.generate_content(prompt)
     return response.text
 
-# 4. 메인 실행부
+# 5. 텔레그램 전송 함수
+def send_telegram_message(message):
+    if not telegram_token or not telegram_chat_id:
+        print("⚠️ 텔레그램 설정이 비어있어 메시지를 보내지 않습니다.")
+        return
+
+    print("📤 텔레그램으로 브리핑 전송 중...")
+    url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"
+    
+    # 마크다운 문법 적용 (볼드체 등)
+    payload = {
+        "chat_id": telegram_chat_id,
+        "text": message,
+        "parse_mode": "Markdown"
+    }
+    
+    try:
+        response = requests.post(url, json=payload)
+        if response.status_code == 200:
+            print("✅ 텔레그램 전송 완료!")
+        else:
+            print(f"❌ 전송 실패: {response.text}")
+    except Exception as e:
+        print(f"❌ 전송 중 오류 발생: {e}")
+
+# 6. 메인 실행부
 if __name__ == "__main__":
     if not api_key:
-        print("❗ 에러: GEMINI_API_KEY 환경 변수가 설정되지 않았습니다.")
+        print("❗ 에러: GEMINI_API_KEY 환경 변수가 없습니다.")
     else:
         try:
             us_data = get_us_sector_performance()
@@ -77,10 +104,15 @@ if __name__ == "__main__":
             
             report = ask_ai_analyst(us_data, kr_themes)
             
+            # 최종 메시지 구성
+            full_report = f"📢 *오늘의 AI 주식 비서 브리핑*\n\n{report}"
+            
+            # 터미널 출력 및 텔레그램 전송
             print("\n" + "="*40)
-            print("📢 오늘의 AI 주식 비서 브리핑")
-            print(report)
+            print(full_report)
             print("="*40)
             
+            send_telegram_message(full_report)
+            
         except Exception as e:
-            print(f"❗ 오류 발생: {e}")
+            print(f"❗ 시스템 오류 발생: {e}")
