@@ -5,7 +5,7 @@ import os
 import google.generativeai as genai
 import json
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # 1. 환경 변수 설정
 api_key = os.getenv("GEMINI_API_KEY")
@@ -16,25 +16,49 @@ naver_secret = os.getenv("NAVER_CLIENT_SECRET")
 
 genai.configure(api_key=api_key)
 
-# 2. 리스크 지표 수집 (환율 및 VIX)
+# 2. 상대적 리스크 지표 분석 (최근 추세 기반)
 def get_risk_indicators():
-    print("📉 리스크 지표 분석 중...")
+    print("📉 시장 변동성 및 상대적 리스크 분석 중...")
     try:
-        # 환율(USD/KRW) 및 VIX(공포지수) 수집
-        usd_krw = yf.Ticker("KRW=X").history(period="1d")['Close'].iloc[-1]
-        vix = yf.Ticker("^VIX").history(period="1d")['Close'].iloc[-1]
+        # 최근 5거래일 데이터 수집
+        usd_krw_ticker = yf.Ticker("KRW=X")
+        vix_ticker = yf.Ticker("^VIX")
         
-        status = "안정"
-        if usd_krw > 1350 or vix > 22:
-            status = "주의 (현금 비중 확대 및 보수적 접근)"
+        df_fx = usd_krw_ticker.history(period="5d")
+        df_vix = vix_ticker.history(period="5d")
         
+        curr_rate = df_fx['Close'].iloc[-1]
+        prev_rate = df_fx['Close'].iloc[-2]
+        avg_rate = df_fx['Close'].mean()
+        curr_vix = df_vix['Close'].iloc[-1]
+        
+        # 등락률 및 변동성 계산
+        rate_chg_pct = ((curr_rate - prev_rate) / prev_rate) * 100
+        vix_chg_pct = ((curr_vix - df_vix['Close'].iloc[-2]) / df_vix['Close'].iloc[-2]) * 100
+        
+        # 리스크 레벨 판단 로직
+        risk_level = "보통"
+        risk_msg = "현재 시장은 정상적인 변동성 범위 내에 있습니다."
+        
+        if rate_chg_pct > 0.4 or curr_vix > 22:
+            risk_level = "주의"
+            risk_msg = "환율 또는 변동성 지수가 급격히 상승 중입니다. 방어적인 태세가 필요합니다."
+        if curr_rate > avg_rate * 1.03 or curr_vix > 28:
+            risk_level = "경계"
+            risk_msg = "시장 심리가 급격히 위축되었습니다. 현금 비중 확보를 권장합니다."
+            
         return {
-            "usd_krw": round(usd_krw, 2),
-            "vix": round(vix, 2),
-            "risk_status": status
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "usd_krw": round(curr_rate, 2),
+            "rate_chg_pct": round(rate_chg_pct, 2),
+            "vix": round(curr_vix, 2),
+            "vix_chg_pct": round(vix_chg_pct, 2),
+            "risk_level": risk_level,
+            "risk_msg": risk_msg
         }
-    except:
-        return {"usd_krw": 0, "vix": 0, "risk_status": "데이터 확인 불가"}
+    except Exception as e:
+        print(f"리스크 분석 오류: {e}")
+        return {"risk_level": "데이터 확인 불가", "risk_msg": "지표 산출 중 오류가 발생했습니다."}
 
 # 3. 네이버 뉴스 검색 함수
 def get_naver_news(query):
@@ -49,8 +73,8 @@ def get_naver_news(query):
         return "  • 관련 뉴스를 불러오지 못했습니다."
     return "  • 관련 뉴스가 없습니다."
 
-# 4. JSON 데이터 저장 함수
-def save_to_history(new_data):
+# 4. JSON 데이터 누적 저장 함수
+def save_to_history(new_entry):
     file_path = "history.json"
     history = []
     if os.path.exists(file_path):
@@ -60,15 +84,14 @@ def save_to_history(new_data):
         except:
             history = []
     
-    history.append(new_data)
+    history.append(new_entry)
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(history, f, ensure_ascii=False, indent=4)
-    print(f"💾 {file_path}에 데이터 누적 완료!")
+    print(f"💾 history.json 업데이트 완료 (누적 {len(history)}건)")
 
-# 5. 시장 데이터 수집 (미국 섹터 & 한국 테마)
+# 5. 시장 데이터 수집 (미국/한국)
 def get_market_data():
-    print("📊 시장 데이터 수집 중...")
-    sectors = {"XLE": "에너지", "XLK": "IT/반도체", "XLI": "산업재", "XLY": "소비재"}
+    sectors = {"XLE": "에너지", "XLK": "IT/반도체", "XLI": "산업재", "XLB": "소재"}
     us_perf = []
     for s, name in sectors.items():
         hist = yf.Ticker(s).history(period="2d")
@@ -81,51 +104,47 @@ def get_market_data():
     
     return us_perf, kr_themes
 
-# 6. 메인 실행부
+# 6. 메인 실행
 if __name__ == "__main__":
-    try:
-        # 데이터 수집
-        risk = get_risk_indicators()
-        us_perf, kr_themes = get_market_data()
-        
-        # AI 분석
-        model = genai.GenerativeModel('models/gemini-2.5-flash')
-        prompt = f"""
-        너는 베테랑 투자 전략가야. 아래 데이터를 보고 텔레그램 리포트를 HTML로 작성해줘.
-        환율/리스크: {risk}
-        미국섹터: {us_perf}
-        한국테마: {kr_themes}
+    risk_info = get_risk_indicators()
+    us_perf, kr_themes = get_market_data()
+    
+    model = genai.GenerativeModel('models/gemini-2.5-flash')
+    prompt = f"""
+    너는 투자 전략가야. 아래 데이터를 보고 텔레그램 리포트를 HTML로 써줘.
+    
+    [데이터]
+    - 시장 리스크: {risk_info}
+    - 미국 섹터 흐름: {us_perf}
+    - 국내 인기 테마: {kr_themes}
+    
+    [작성 가이드]
+    1. 상단에 현재 리스크 레벨({risk_info['risk_level']})에 따른 투자 태세를 먼저 한 줄로 요약해줘.
+    2. 국장 테마 2개를 선정하고 각각 분석 근거와 대장주를 적어줘.
+    3. 각 테마 끝에 반드시 [NEWS_QUERY: 검색어]를 넣어줘.
+    """
+    
+    report_content = model.generate_content(prompt).text
+    
+    # 뉴스 키워드 치환
+    queries = re.findall(r"\[NEWS_QUERY: (.+?)\]", report_content)
+    for q in queries:
+        news_links = get_naver_news(q)
+        report_content = report_content.replace(f"[NEWS_QUERY: {q}]", f"📰 <b>최신 뉴스:</b>\n{news_links}")
 
-        작성 규칙:
-        1. 리스크 상태를 최상단에 강조해서 적어줄 것.
-        2. 급등 예상 테마 2개를 선정하고 각각 [NEWS_QUERY: 검색어]를 포함할 것.
-        3. 말투는 친절하면서도 전문적으로.
-        """
-        
-        report_text = model.generate_content(prompt).text
-        
-        # 뉴스 치환
-        queries = re.findall(r"\[NEWS_QUERY: (.+?)\]", report_text)
-        for q in queries:
-            news = get_naver_news(q)
-            report_text = report_text.replace(f"[NEWS_QUERY: {q}]", f"📰 <b>관련 뉴스:</b>\n{news}")
+    # JSON 데이터 생성 및 저장
+    history_entry = {
+        "date": risk_info['date'],
+        "risk_data": risk_info,
+        "us_market": us_perf,
+        "kr_themes": kr_themes,
+        "report": report_content
+    }
+    save_to_history(history_entry)
 
-        # JSON 저장을 위한 데이터 구조 생성
-        history_entry = {
-            "date": datetime.now().strftime("%Y-%m-%d"),
-            "risk": risk,
-            "us_market": us_perf,
-            "predicted_themes": kr_themes[:2], # AI가 뽑은 상위 테마 예시
-            "raw_report": report_text
-        }
-        save_to_history(history_entry)
-
-        # 텔레그램 전송
-        final_msg = f"📅 <b>{history_entry['date']} 마켓 브리핑</b>\n\n" + report_text
-        requests.post(f"https://api.telegram.org/bot{telegram_token}/sendMessage", 
-                      json={"chat_id": telegram_chat_id, "text": final_msg, "parse_mode": "HTML"})
-        
-        print("모든 작업이 완료되었습니다!")
-
-    except Exception as e:
-        print(f"❗ 오류 발생: {e}")
+    # 텔레그램 전송
+    full_msg = f"🔔 <b>{risk_info['date']} 마켓 리스크 관리 브리핑</b>\n" + report_content
+    requests.post(f"https://api.telegram.org/bot{telegram_token}/sendMessage", 
+                  json={"chat_id": telegram_chat_id, "text": full_msg, "parse_mode": "HTML"})
+    
+    print("오늘의 브리핑 및 데이터 저장 완료!")
