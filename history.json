@@ -1,0 +1,33 @@
+[
+    {
+        "date": "2026-04-29",
+        "risk_data": {
+            "date": "2026-04-29",
+            "usd_krw": 1476.84,
+            "rate_chg_pct": 0.26,
+            "vix": 17.83,
+            "vix_chg_pct": -1.05,
+            "risk_level": "보통",
+            "risk_msg": "현재 시장은 정상적인 변동성 범위 내에 있습니다."
+        },
+        "us_market": [
+            "에너지(1.66%)",
+            "IT/반도체(-1.69%)",
+            "산업재(-0.89%)",
+            "소재(-0.73%)"
+        ],
+        "kr_themes": [
+            "테마명",
+            "전선",
+            "정유",
+            "전력설비",
+            "고체산화물 연료전지(SOFC)",
+            "석유화학",
+            "캐릭터상품",
+            "2026 상반기 신규상장",
+            "2차전지(생산)",
+            "전기차(충전소/충전기)"
+        ],
+        "report": "```html\n<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>🚀 [긴급속보] 4월 29일 마켓 인사이트: '보통' 리스크 속 기회 포착 전략!</title>\n    <style>\n        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; margin: 0; padding: 20px; }\n        .container { max-width: 600px; margin: auto; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); padding: 25px; }\n        h1, h2, h3, h4 { color: #2c3e50; margin-top: 20px; margin-bottom: 10px; }\n        h1 { font-size: 1.5em; text-align: center; color: #007bff; }\n        h2 { font-size: 1.3em; border-bottom: 2px solid #e9ecef; padding-bottom: 5px; }\n        h3 { font-size: 1.1em; color: #007bff; }\n        p { margin-bottom: 10px; }\n        ul { list-style-type: none; padding: 0; margin-bottom: 15px; }\n        ul li { background: #e9f5ff; border-left: 4px solid #007bff; margin-bottom: 5px; padding: 8px 12px; border-radius: 4px; }\n        strong { color: #2c3e50; }\n        .risk-level { background-color: #ffe0b2; color: #e65100; padding: 8px 15px; border-radius: 5px; text-align: center; margin-bottom: 20px; font-weight: bold; }\n        .market-status { background-color: #f0f8ff; border-left: 5px solid #007bff; padding: 15px; margin-top: 20px; border-radius: 5px; }\n        .news-query { font-size: 0.9em; color: #6c757d; margin-top: 5px; }\n        .emoji { margin-right: 5px; }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <h1>🚀 4월 29일 마켓 인사이트: '보통' 리스크 속 기회 포착 전략!</h1>\n        \n        <div class=\"risk-level\">\n            <p><span class=\"emoji\">✅</span> <strong>현재 시장 리스크 '보통' 수준으로, 투자 비중을 유지하며 기회 탐색에 집중할 시기입니다.</strong></p>\n        </div>\n\n        <div class=\"market-status\">\n            <h2><span class=\"emoji\">📊</span> 시장 현황 브리핑 (2026-04-29)</h2>\n            <ul>\n                <li><span class=\"emoji\">📈</span> <strong>환율 (USD/KRW):</strong> 1476.84원 (+0.26%) - 달러 강세 압력이 소폭 증가했으나 큰 변동은 없습니다.</li>\n                <li><span class=\"emoji\">📉</span> <strong>VIX 지수:</strong> 17.83 (-1.05%) - 시장 변동성 지수는 하락하며 투자 심리 안정에 기여하고 있습니다.</li>\n                <li><span class=\"emoji\">🌍</span> <strong>미국 섹터 흐름:</strong> 에너지 섹터 (+1.66%)가 두드러진 강세를 보인 반면, IT/반도체 (-1.69%), 산업재 (-0.89%), 소재 (-0.73%)는 약세를 기록했습니다. 이는 글로벌 에너지 수요와 관련된 테마에 주목할 필요가 있음을 시사합니다.</li>\n            </ul>\n            <p>현재 시장은 정상적인 변동성 범위 내에 있으며, 특정 섹터로의 수급 쏠림 현상이 관찰됩니다.</p>\n        </div>\n\n        <h2><span class=\"emoji\">🔥</span> 금일 주목할 국내 테마</h2>\n        <p>글로벌 에너지 섹터의 강세와 맞물려 국내에서도 관련 인프라 및 전력 수요 증가 기대감이 높은 테마들을 주목할 필요가 있습니다.</p>\n\n        <h3>1. <span class=\"emoji\">⚡️</span> 전선</h3>\n        <p>AI 데이터센터 구축 가속화, 노후 전력망 교체 및 신재생에너지 확대로 인한 전력 수요 급증은 전선 산업의 구조적인 성장을 이끌고 있습니다. 특히 북미를 중심으로 한 해외 수주 확대 기대감이 매우 높으며, 구리 가격 상승 또한 긍정적인 영향을 미치고 있습니다. 미국 에너지 섹터의 강세와 궤를 같이 하는 테마입니다.</p>\n        <ul>\n            <li><strong>분석 근거:</strong> AI 데이터센터 및 신재생에너지발 전력 수요 급증, 노후 전력망 교체 수요, 해외 수주 확대 기대감.</li>\n            <li><strong>대장주:</strong> <strong>대한전선</strong></li>\n        </ul>\n        <p class=\"news-query\">📰 <b>최신 뉴스:</b>\n  • 대한전선 장중 VI 상승세...7% 급등\n  • [기업이슈] 미국 기술주 강세 영향에…국내 반도체 관련주 불기둥\n  • [특징주] 미·이란 종전협상 기대감에 전선주 강세… 대원전선 ‘상한가...</p>\n\n        <h3>2. <span class=\"emoji\">💪</span> 전력설비</h3>\n        <p>전선 테마와 함께 전력망 인프라 구축의 핵심인 전력설비 산업 또한 견조한 성장세를 보이고 있습니다. 전력 효율성 개선과 안정적인 공급망 확보를 위한 글로벌 투자가 활발하며, 특히 고압 직류 송전(HVDC) 등 차세대 기술 도입은 국내 기업들의 경쟁력을 더욱 부각시키고 있습니다. 전 세계적인 전력 인프라 투자 확대 기조 속에서 지속적인 성장이 기대됩니다.</p>\n        <ul>\n            <li><strong>분석 근거:</strong> 전세계적인 전력망 업그레이드 수요, AI 데이터센터 증설에 따른 변압기 등 전력기기 수요 폭증, 수출 확대.</li>\n            <li><strong>대장주:</strong> <strong>HD현대일렉트릭</strong></li>\n        </ul>\n        <p class=\"news-query\">📰 <b>최신 뉴스:</b>\n  • LS일렉트릭, 美 빅테크 데이터센터 전력 인프라 계약 체결 소식에 5% 올...\n  • '태양광' 붙으면 폭등? … '영농형 태양광법' 통과 기대감에 관련주 급...\n  • 전력설비주, 다시 고개 드나…효성중공업 삼성SDI 상승 속 '대형주 엇갈...</p>\n    </div>\n</body>\n</html>\n```"
+    }
+]
