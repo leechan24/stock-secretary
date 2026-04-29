@@ -28,3 +28,12 @@ jobs:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: python morning_report.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add history.json
+          # 파일이 변경되었을 때만 커밋
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update history.json [skip ci]"
+          git push
