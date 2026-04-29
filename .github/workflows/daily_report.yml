@@ -18,12 +18,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 yfinance google-generativeai
+          pip install requests beautifulsoup4 yfinance google-generativeai pykrx
 
       - name: Run Script
-        # 이 아래 env 부분이 GitHub Secrets와 파이썬 코드를 연결해주는 다리입니다!
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: python morning_report.py
