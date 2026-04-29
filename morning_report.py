@@ -89,16 +89,15 @@ if __name__ == "__main__":
     kr_themes = [a.text for a in soup.select('.col_type1 a')[:10]]
 
     # AI 리포트 생성 (Gemini)
-    #model = genai.GenerativeModel('models/gemini-2.5-flash') #잠시 테스트때문에 막혀서 하위버전사용
-    model = genai.GenerativeModel('models/gemini-2.0-flash')
+    model = genai.GenerativeModel('models/gemini-2.5-flash') #잠시 테스트때문에 막혀서 하위버전사용
     prompt = f"""
-    너는 대한민국 최고의 주식 일타강사 '노선생'이야. 
+    너는 대한민국 최고의 주식 일타강사 '쥐선생'이야. 
     아래 데이터를 분석해서 제자들에게 리포트를 HTML 형식으로 써줘.
     
     데이터: 리스크({risk_info}), 미장({us_perf}), 국장테마({kr_themes})
     
     [작성 규칙]
-    1. 도입부: "🔥 <b>자, 우리 슈퍼개미를 꿈꾸는 제자 여러분! 노선생입니다!</b>"로 시작하며 여기까지만 이모지를 사용해.
+    1. 도입부: "🔥 <b>자, 우리 슈퍼개미를 꿈꾸는 제자 여러분! 쥐선생입니다!</b>"로 시작하며 여기까지만 이모지를 사용해.
     2. 지표 정리: 환율, VIX, 미국 섹터 흐름을 깔끔하게 박스 형태로 정리해.
     3. 테마 및 대장주: 
        - 테마 제목은 <b>[오늘의 원픽/투픽 테마: 테마명]</b> 형식으로 아주 굵게 표시해.
