@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
     # AI 리포트 생성 (Gemini)
     #model = genai.GenerativeModel('models/gemini-2.5-flash') #잠시 테스트때문에 막혀서 하위버전사용
-    model = genai.GenerativeModel('models/gemini-1.5-flash')
+    model = genai.GenerativeModel('models/gemini-2.0-flash')
     prompt = f"""
     너는 대한민국 최고의 주식 일타강사 '노선생'이야. 
     아래 데이터를 분석해서 제자들에게 리포트를 HTML 형식으로 써줘.
