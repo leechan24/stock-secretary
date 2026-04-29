@@ -1,0 +1,27 @@
+name: Daily Stock AI Report
+
+on:
+  schedule:
+    # 한국 시간(KST) 오전 06:30은 UTC 기준 전날 오후 21:30입니다.
+    - cron: '30 21 * * *' 
+  workflow_dispatch: # 언제든 수동으로 실행해볼 수 있는 버튼
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 yfinance google-generativeai
+
+      - name: Run Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python morning_report.py
