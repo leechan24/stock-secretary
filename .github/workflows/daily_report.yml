@@ -2,12 +2,16 @@ name: Daily Stock AI Report
 
 on:
   schedule:
-    - cron: '30 21 * * *' # 한국 시간 기준 매일 오전 6시 30분
+    - cron: '30 21 * * *' # UTC 21:30 = 한국 시간(KST) 오전 6시 30분
   workflow_dispatch: # 수동 실행 버튼
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 파일 수정을 위한 권한 추가
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v3
 
@@ -18,7 +22,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 yfinance google-generativeai pykrx
+          python -m pip install --upgrade pip
+          # google-genai 라이브러리로 수정 완료!
+          pip install requests beautifulsoup4 yfinance python-dotenv google-genai
 
       - name: Run Script
         env:
@@ -31,9 +37,13 @@ jobs:
 
       - name: Commit and Push changes
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git add history.json
-          # 파일이 변경되었을 때만 커밋
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update history.json [skip ci]"
-          git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 만약 history.json 파일이 없으면 에러 방지를 위해 체크
+          if [ -f history.json ]; then
+            git add history.json
+            git diff --quiet && git diff --staged --quiet || (git commit -m "📅 Update report history [skip ci]" && git push)
+          else
+            echo "history.json 파일이 생성되지 않았습니다."
+          fi
