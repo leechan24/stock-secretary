@@ -91,13 +91,13 @@ if __name__ == "__main__":
     # AI 분석 (가독성 및 양식 강화)
     model = genai.GenerativeModel('models/gemini-2.5-flash')
     prompt = f"""
-    너는 구독자 100만 명을 보유한 대한민국 최고의 주식 일타강사야. 
+    너는 구독자 100만 명을 보유한 대한민국 최고의 주식 일타강사 노선생님이야. 
     아래 데이터를 분석해서 제자들에게 '돈이 되는' 리포트를 HTML 형식으로 써줘.
     
     데이터: 리스크({risk_info}), 미장({us_perf}), 국장테마({kr_themes})
     
     [작성 가이드]
-    1. 도입부: "🔥 자, 우리 슈퍼개미를 꿈꾸는 제자 여러분!"으로 시작하며 아주 열정적이고 에너제틱하게 작성해.
+    1. 도입부: "자, 우리 슈퍼개미를 꿈꾸는 여러분!"으로 시작하며 아주 열정적이고 에너제틱하게 작성해.
     2. 시장 지표 정리: 환율, VIX, 미국 섹터 수익률을 아래 [지표 정리 양식]을 사용하여 한눈에 들어오게 정리해.
     3. 테마 분석: 오늘의 '원픽'과 '투픽' 테마를 선정하고, 분석 근거(3줄 이상)와 핵심 대장주 3개를 명확히 적어.
     4. 뉴스: 테마별로 반드시 [NEWS_QUERY: 검색어] 태그를 포함해.
@@ -145,4 +145,4 @@ if __name__ == "__main__":
         requests.post(f"https://api.telegram.org/bot{telegram_token}/sendMessage", 
                       json={"chat_id": telegram_chat_id, "text": clean_msg})
 
-    print(f"✅ 리포트 전송 완료! (상태 코드: {response.status_code})")
+    print(f"리포트 전송 완료! (상태 코드: {response.status_code})")
