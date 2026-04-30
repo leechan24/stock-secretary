@@ -24,6 +24,32 @@ naver_secret = clean_val("NAVER_CLIENT_SECRET")
 
 client = genai.Client(api_key=api_key)
 
+# --- [보강] 히스토리 저장 함수 (마켓 지표 + 종목 데이터) ---
+def save_to_history(date, picks, market_data, history_file="history.json"):
+    """오늘의 마켓 지표와 추천 종목을 history.json에 통합 저장"""
+    history_data = []
+    if os.path.exists(history_file):
+        try:
+            with open(history_file, "r", encoding="utf-8") as f:
+                history_data = json.load(f)
+        except: history_data = []
+
+    # 해당 날짜 데이터가 이미 있으면 업데이트 (중복 방지)
+    history_data = [item for item in history_data if item['date'] != date]
+    
+    history_data.append({
+        "date": date,
+        "market": market_data,  # 환율, VIX, 투자 비중 등 포함
+        "picks": picks          # 종목명, 코드, 기준가, 테마 포함
+    })
+
+    # 날짜순 정렬
+    history_data.sort(key=lambda x: x['date'])
+
+    with open(history_file, "w", encoding="utf-8") as f:
+        json.dump(history_data, f, ensure_ascii=False, indent=2)
+    print(f"📁 {date} 통합 데이터(마켓+종목)가 history.json에 기록되었습니다.")
+
 def get_market_status():
     try:
         df_fx = yf.Ticker("KRW=X").history(period="5d")
@@ -78,10 +104,10 @@ def get_naver_news(query):
     return "  • 관련 뉴스가 없습니다."
 
 if __name__ == "__main__":
-    print("🐭 쥐사장 분석기 통합 버전 가동!")
+    print("🐭 쥐사장 분석기 통합 보강 버전 가동!")
     m = get_market_status()
     
-    # [추가] 미장 섹터 분석 로직 다시 부활!
+    # 미장 섹터 분석
     sectors = {"XLK": "반도체", "XLE": "에너지", "XLV": "바이오", "XLB": "소재", "XLI": "산업재"}
     us_perf = []
     for s, name in sectors.items():
@@ -91,7 +117,8 @@ if __name__ == "__main__":
             us_perf.append(f"{name}({round(c,2)}%)")
         except: pass
 
-    # 국장 테마 및 전일 종가 수집
+    # 국장 테마 및 전일 종가 수집 + 히스토리 데이터 가공
+    all_picks_for_history = []
     try:
         res = requests.get("https://finance.naver.com/sise/theme.naver", headers={'User-Agent': 'Mozilla/5.0'})
         soup = BeautifulSoup(res.text, 'html.parser')
@@ -111,15 +138,22 @@ if __name__ == "__main__":
                 s_code = re.search(r'code=(\d+)', s['href']).group(1)
                 s_price = get_stock_price(s_code)
                 stock_info.append(f"{s_name}({s_code}): 전일종가 {s_price}원")
+                
+                if isinstance(s_price, int):
+                    all_picks_for_history.append({
+                        "name": s_name,
+                        "code": s_code,
+                        "base_price": s_price,
+                        "theme": theme_name
+                    })
             
             refined_themes.append({"theme": theme_name, "stocks": stock_info})
     except:
         refined_themes = ["국장 데이터 로드 실패"]
 
     try:
-        print(f"🤖 쥐사장 AI 분석 중... (안정화 모델 사용)")
+        print(f"🤖 쥐사장 AI 분석 중...")
         
-        # 프롬프트에 미장 데이터(us_perf)를 명시적으로 전달!
         prompt = f"""
         너는 대한민국 최고의 주식 일타강사 '쥐사장'이야. 
         미장 섹터 흐름과 국장 테마/전일 종가 데이터를 매칭해서 1,000만 원 투자자용 리포트를 써라.
@@ -130,8 +164,7 @@ if __name__ == "__main__":
         3. 오늘 국장 테마 및 종목별 전일 종가: {refined_themes}
         
         [작성 지시]
-        - 도입부에서 미장 성적표를 언급하며 오늘의 전체적인 시장 분위기를 쥐사장 말투로 설명해.
-        - 미장에서 강했던 섹터와 연관된 국장 테마가 있다면 '원픽'으로 우선 고려해.
+        - 도입부에서 미장 성적표를 언급하며 오늘의 시장 분위기를 쥐사장 말투로 설명해.
         - 전략은 반드시 제공된 '전일 종가'를 기준으로 구체적인 가격([숫자]원)을 계산해서 제시해.
         - 테마별 대장주는 5개.
         - 텔레그램용 <b>, <i> 태그만 사용.
@@ -146,10 +179,7 @@ if __name__ == "__main__":
         - 마무리: "오늘도 원칙 매매! 성투하시길 바랍니다. 찍찍!"
         """
         
-        response = client.models.generate_content(
-            model="gemini-flash-latest",
-            contents=prompt
-        )
+        response = client.models.generate_content(model="gemini-flash-latest", contents=prompt)
         report_content = response.text
         
         queries = re.findall(r"\[NEWS_QUERY: (.+?)\]", report_content)
@@ -157,10 +187,15 @@ if __name__ == "__main__":
             report_content = report_content.replace(f"[NEWS_QUERY: {q}]", f"📰 <b>뉴스:</b>\n{get_naver_news(q)}")
 
         full_msg = f"📅 <b>{m['date']} 프리미엄 브리핑</b>\n\n" + report_content
-        telegram_url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"
+        
+        # 텔레그램 발송
+        requests.post(f"https://api.telegram.org/bot{telegram_token}/sendMessage", 
+                      json={"chat_id": telegram_chat_id, "text": full_msg, "parse_mode": "HTML", "disable_web_page_preview": True})
+        
+        # --- [최종] 마켓 지표와 종목 픽을 함께 저장 ---
+        save_to_history(m['date'], all_picks_for_history, m)
 
-        requests.post(telegram_url, json={"chat_id": telegram_chat_id, "text": full_msg, "parse_mode": "HTML", "disable_web_page_preview": True})
-        print("✨ 미장 흐름 반영 리포트 발송 완료!")
+        print("✨ 리포트 발송 및 통합 데이터 기록 완료!")
 
     except Exception as e:
         print(f"❌ 오류 발생: {e}")
