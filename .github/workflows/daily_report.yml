@@ -2,8 +2,9 @@ name: Daily Stock AI Report
 
 on:
   schedule:
-   # 한국 시간 오전 6시 00분에 실행 (UTC 21:00)
-    - cron: '00 21 * * *'
+   # 월, 화, 수, 목, 금 아침 6시에만 실행 (토, 일 제외)
+    # UTC 기준으로는 일, 월, 화, 수, 목 밤 9시가 한국의 월, 화, 수, 목, 금 아침이야!
+    - cron: '00 21 * * 0-4'
   workflow_dispatch: # 수동 실행 버튼
 
 jobs:
