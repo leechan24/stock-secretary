@@ -3,11 +3,11 @@
     "date": "2026-04-30",
     "market": {
       "date": "2026-04-30",
-      "usd_krw": 1477.25,
-      "rate_chg_pct": 0.36,
-      "vix": 18.04,
-      "status": "주의 ⚠️",
-      "total_weight": "10%~15% (방망이 짧게)"
+      "usd_krw": 1473.22,
+      "rate_chg_pct": 0.08,
+      "vix": 16.89,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
     },
     "picks": [
       {
