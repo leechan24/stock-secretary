@@ -2,20 +2,21 @@ name: Daily Stock AI Report
 
 on:
   schedule:
-   # 월, 화, 수, 목, 금 아침 6시에만 실행 (토, 일 제외)
-    # UTC 기준으로는 일, 월, 화, 수, 목 밤 9시가 한국의 월, 화, 수, 목, 금 아침이야!
+    # 월, 화, 수, 목, 금 아침 6시에 실행 (한국 시간 기준)
+    # UTC 기준: 일, 월, 화, 수, 목 밤 9시
     - cron: '00 21 * * 0-4'
-  workflow_dispatch: # 수동 실행 버튼
+  workflow_dispatch: # 필요할 때 언제든 수동 실행 가능
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # 파일 수정을 위한 권한 추가
+    # history.json 수정을 위해 쓰기 권한 부여
     permissions:
       contents: write
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out repository
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -25,10 +26,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # google-genai 라이브러리로 수정 완료!
-          pip install requests beautifulsoup4 yfinance python-dotenv google-genai
+          # 휴장일 판단을 위한 exchange-calendars와 pandas 추가 완료!
+          pip install requests beautifulsoup4 yfinance python-dotenv google-genai exchange-calendars pandas
 
-      - name: Run Script
+      - name: Run Morning Report Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -42,10 +43,18 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 만약 history.json 파일이 없으면 에러 방지를 위해 체크
+          # 1. history.json 파일이 존재하는지 먼저 확인
           if [ -f history.json ]; then
             git add history.json
-            git diff --quiet && git diff --staged --quiet || (git commit -m "📅 Update report history [skip ci]" && git push)
+            
+            # 2. 파일에 변화가 있는지 확인 (휴장일이라 변화가 없으면 커밋 스킵)
+            if git diff --quiet && git diff --staged --quiet; then
+              echo "아무런 변화가 없습니다. 커밋을 건너뜁니다."
+            else
+              git commit -m "📅 Update report history [skip ci]"
+              git push
+              echo "성공적으로 업데이트 및 푸시되었습니다."
+            fi
           else
-            echo "history.json 파일이 생성되지 않았습니다."
+            echo "history.json 파일이 존재하지 않습니다."
           fi
