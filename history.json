@@ -125,5 +125,132 @@
         "theme": "전력설비"
       }
     ]
+  },
+  {
+    "date": "2026-05-01",
+    "market": {
+      "date": "2026-05-01",
+      "usd_krw": 1473.0,
+      "rate_chg_pct": -0.97,
+      "vix": 16.89,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "KBI메탈",
+        "code": "024840",
+        "base_price": 5100,
+        "theme": "전선"
+      },
+      {
+        "name": "대원전선",
+        "code": "006340",
+        "base_price": 15050,
+        "theme": "전선"
+      },
+      {
+        "name": "가온전선",
+        "code": "000500",
+        "base_price": 241500,
+        "theme": "전선"
+      },
+      {
+        "name": "대한전선",
+        "code": "001440",
+        "base_price": 56300,
+        "theme": "전선"
+      },
+      {
+        "name": "LS",
+        "code": "006260",
+        "base_price": 453000,
+        "theme": "전선"
+      },
+      {
+        "name": "쏘카",
+        "code": "403550",
+        "base_price": 17810,
+        "theme": "렌터카"
+      },
+      {
+        "name": "레드캡투어",
+        "code": "038390",
+        "base_price": 11520,
+        "theme": "렌터카"
+      },
+      {
+        "name": "롯데렌탈",
+        "code": "089860",
+        "base_price": 33650,
+        "theme": "렌터카"
+      },
+      {
+        "name": "케이카",
+        "code": "381970",
+        "base_price": 11000,
+        "theme": "렌터카"
+      },
+      {
+        "name": "남해화학",
+        "code": "025860",
+        "base_price": 11740,
+        "theme": "비료"
+      },
+      {
+        "name": "KG케미칼",
+        "code": "001390",
+        "base_price": 7070,
+        "theme": "비료"
+      },
+      {
+        "name": "조비",
+        "code": "001550",
+        "base_price": 15930,
+        "theme": "비료"
+      },
+      {
+        "name": "누보",
+        "code": "332290",
+        "base_price": 1382,
+        "theme": "비료"
+      },
+      {
+        "name": "효성오앤비",
+        "code": "097870",
+        "base_price": 6750,
+        "theme": "비료"
+      },
+      {
+        "name": "선도전기",
+        "code": "007610",
+        "base_price": 8450,
+        "theme": "전력설비"
+      },
+      {
+        "name": "KBI메탈",
+        "code": "024840",
+        "base_price": 5100,
+        "theme": "전력설비"
+      },
+      {
+        "name": "산일전기",
+        "code": "062040",
+        "base_price": 266000,
+        "theme": "전력설비"
+      },
+      {
+        "name": "티씨머티리얼즈",
+        "code": "125020",
+        "base_price": 8430,
+        "theme": "전력설비"
+      },
+      {
+        "name": "대원전선",
+        "code": "006340",
+        "base_price": 15050,
+        "theme": "전력설비"
+      }
+    ]
   }
 ]
