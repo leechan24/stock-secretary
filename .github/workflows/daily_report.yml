@@ -3,14 +3,12 @@ name: Daily Stock AI Report
 on:
   schedule:
     # 월, 화, 수, 목, 금 아침 6시에 실행 (한국 시간 기준)
-    # UTC 기준: 일, 월, 화, 수, 목 밤 9시
     - cron: '00 21 * * 0-4'
-  workflow_dispatch: # 필요할 때 언제든 수동 실행 가능
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # history.json 수정을 위해 쓰기 권한 부여
     permissions:
       contents: write
 
@@ -26,7 +24,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # 휴장일 판단을 위한 exchange-calendars와 pandas 추가 완료!
           pip install requests beautifulsoup4 yfinance python-dotenv google-genai exchange-calendars pandas
 
       - name: Run Morning Report Script
@@ -38,23 +35,31 @@ jobs:
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: python morning_report.py
 
+      # --- [추가된 단계: 성적표 계산] ---
+      - name: Calculate Performance Stats
+        run: python calc_stats.py
+
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 1. history.json 파일이 존재하는지 먼저 확인
+          # 1. history.json과 stats.json 파일 존재 여부 확인 후 add
           if [ -f history.json ]; then
             git add history.json
-            
-            # 2. 파일에 변화가 있는지 확인 (휴장일이라 변화가 없으면 커밋 스킵)
-            if git diff --quiet && git diff --staged --quiet; then
-              echo "아무런 변화가 없습니다. 커밋을 건너뜁니다."
-            else
-              git commit -m "📅 Update report history [skip ci]"
-              git push
-              echo "성공적으로 업데이트 및 푸시되었습니다."
-            fi
+            echo "history.json 파일을 스테이징에 추가했습니다."
+          fi
+          
+          if [ -f stats.json ]; then
+            git add stats.json
+            echo "stats.json 파일을 스테이징에 추가했습니다."
+          fi
+          
+          # 2. 파일 변화 확인 및 커밋/푸시
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "아무런 변화가 없습니다. 커밋을 건너뜁니다."
           else
-            echo "history.json 파일이 존재하지 않습니다."
+            git commit -m "📅 Update report & stats [skip ci]"
+            git push
+            echo "성공적으로 업데이트 및 푸시되었습니다."
           fi
