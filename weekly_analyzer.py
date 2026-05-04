@@ -7,7 +7,6 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from google import genai
 
-# 로컬 테스트용 (GitHub Actions에서는 Secrets 환경변수를 직접 읽음)
 load_dotenv()
 
 def get_env(key):
@@ -21,7 +20,6 @@ client = genai.Client(api_key=api_key)
 
 def get_weekly_performance(picks, start_date):
     results = []
-    # 오늘 상한가 데이터를 포함하기 위해 내일 날짜까지 범위 설정
     search_end = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
 
     for pick in picks:
@@ -30,7 +28,6 @@ def get_weekly_performance(picks, start_date):
         base_price = pick.get('base_price', 0)
         theme = pick.get('theme', '기타')
         try:
-            # 코스피/코스닥 구분 시도
             suffix = ".KS" if not (code.endswith(".KS") or code.endswith(".KQ")) else ""
             stock = yf.Ticker(f"{code}{suffix}")
             hist = stock.history(start=start_date, end=search_end)
@@ -40,12 +37,17 @@ def get_weekly_performance(picks, start_date):
                 hist = stock.history(start=start_date, end=search_end)
 
             if not hist.empty:
-                # 최고가 캡처 (히스토리 고가 vs 실시간 고가)
                 max_p = max(float(hist['High'].max()), float(stock.fast_info.get('dayHigh', 0)))
                 profit = ((max_p - base_price) / base_price) * 100
-                results.append({"name": name, "theme": theme, "profit": round(profit, 2)})
+                results.append({
+                    "name": name, 
+                    "code": code, # 코드 추가
+                    "theme": theme, 
+                    "profit": round(profit, 2),
+                    "max_price": int(max_p) # 최고가 추가
+                })
         except:
-            results.append({"name": name, "theme": theme, "profit": 0})
+            results.append({"name": name, "code": code, "theme": theme, "profit": 0, "max_price": base_price})
     return results
 
 def run_weekly_analysis():
@@ -58,7 +60,6 @@ def run_weekly_analysis():
     with open("history.json", "r", encoding="utf-8") as f:
         history_data = json.load(f)
 
-    # 이번 주 월요일 기준 필터링
     monday = (datetime.now() - timedelta(days=datetime.now().weekday())).strftime("%Y-%m-%d")
     target_history = [h for h in history_data if h['date'] >= monday]
 
@@ -68,11 +69,27 @@ def run_weekly_analysis():
 
     total_summary = []
     latest_market = target_history[-1].get('market', {})
+
+    # --- [데이터 기록 로직 시작] ---
     for day in target_history:
         perf = get_weekly_performance(day['picks'], day['date'])
+        
+        # history.json에 수익률 데이터 매핑
+        for pick in day['picks']:
+            for res in perf:
+                if pick['code'] == res['code']:
+                    pick['profit'] = res['profit']
+                    pick['max_price'] = res['max_price']
+                    break
+        
         total_summary.append({"date": day['date'], "performance": perf})
 
-    # AI 프롬프트 - 제자님 맞춤형 구성
+    # 파일 저장 (이게 되어야 웹 대시보드에 데이터가 나옵니다)
+    with open("history.json", "w", encoding="utf-8") as f:
+        json.dump(history_data, f, ensure_ascii=False, indent=2)
+    # --- [데이터 기록 로직 끝] ---
+
+    # 제자님의 소중한 기존 프롬프트 (그대로 유지)
     prompt = f"""
     너는 대한민국 주식 일타강사 '쥐사장'이다. 아래 양식에 맞춰 주간 리포트를 작성하라.
     
@@ -85,7 +102,7 @@ def run_weekly_analysis():
     🏆 <b>WEEKLY PERFORMANCE REPORT</b>
 
     1. <b>시장 브리핑 및 대응 전략</b>
-    환율(<b>{latest_market.get('exchange_rate', 'N/A')}</b>)과 VIX(<b>{latest_market.get('vix', 'N/A')}</b>) 상황을 기반으로 현재 비중 조절 전략을 제시하라.
+    환율(<b>{latest_market.get('usd_krw', 'N/A')}</b>)과 VIX(<b>{latest_market.get('vix', 'N/A')}</b>) 상황을 기반으로 현재 비중 조절 전략을 제시하라.
 
     2. [🏆 <b>이번 주 효자 종목</b>]
     수익률 10% 넘긴 종목들을 나열하고 격하게 칭찬하라.
@@ -98,14 +115,13 @@ def run_weekly_analysis():
     이 섹션은 네가 데이터(수익률, 시장 상황)를 보고 자유롭게 작성하라. 
     - 수익이 좋으면 자만 방지, 저조하면 복기와 인내 강조.
     - 제자들에게 전하고 싶은 주식 마인드셋 조언을 포함하라.
-    - 예시 말투: "제자님들! 시장이 불안할수록 '방망이 짧게'가 핵심입니다. 오늘 수익 본 종목들은 기분 좋게 익절하고, 안 풀린 종목들은 왜 안 갔는지 차트 복기 꼭 하십시오! 공부만이 살길입니다! 내일도 수익 파티 준비됐습니까? 쥐사장만 믿고 따라오십시오!"
+    - 데이터 요약: {total_summary}
     """
 
     try:
         response = client.models.generate_content(model="gemini-flash-latest", contents=prompt)
         report = response.text.replace("```html", "").replace("```", "").strip()
         
-        # 텔레그램 전송
         requests.post(
             f"https://api.telegram.org/bot{telegram_token}/sendMessage",
             json={
@@ -115,7 +131,7 @@ def run_weekly_analysis():
                 "disable_web_page_preview": True
             }
         )
-        print("✨ 리포트 발송 완료!")
+        print("✨ 리포트 발송 및 장부 업데이트 완료!")
     except Exception as e:
         print(f"❌ 오류 발생: {e}")
 
