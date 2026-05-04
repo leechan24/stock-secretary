@@ -51,10 +51,10 @@ def run_stats_engine():
     stats = {
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "performance": {
-            "1day": calculate_avg_profit(history_data, 1),    # 어제 추천주 성적
-            "1week": calculate_avg_profit(history_data, 7),   # 이번 주 성적
-            "1month": calculate_avg_profit(history_data, 30), # 이번 달 성적
-            "6month": calculate_avg_profit(history_data, 180) # 반년 성적
+            "oneDay": calculate_avg_profit(history_data, 1), # 어제 추천주 성적
+            "oneWeek": calculate_avg_profit(history_data, 7), # 이번 주 성적
+            "oneMonth": calculate_avg_profit(history_data, 30), # 이번 달 성적
+            "sixMonth": calculate_avg_profit(history_data, 180)  # 반년 성적
         }
     }
 
