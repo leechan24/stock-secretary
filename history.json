@@ -385,5 +385,126 @@
         "theme": "해저터널(지하화/지하도로 등)"
       }
     ]
+  },
+  {
+    "date": "2026-05-06",
+    "market": {
+      "date": "2026-05-06",
+      "usd_krw": 1445.2,
+      "rate_chg_pct": -2.09,
+      "vix": 17.39,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "SKC",
+        "code": "011790",
+        "base_price": 161200,
+        "theme": "유리 기판"
+      },
+      {
+        "name": "HB테크놀러지",
+        "code": "078150",
+        "base_price": 4020,
+        "theme": "유리 기판"
+      },
+      {
+        "name": "필옵틱스",
+        "code": "161580",
+        "base_price": 63000,
+        "theme": "유리 기판"
+      },
+      {
+        "name": "한빛레이저",
+        "code": "452190",
+        "base_price": 10010,
+        "theme": "유리 기판"
+      },
+      {
+        "name": "켐트로닉스",
+        "code": "089010",
+        "base_price": 45700,
+        "theme": "유리 기판"
+      },
+      {
+        "name": "KBI메탈",
+        "code": "024840",
+        "base_price": 8610,
+        "theme": "전선"
+      },
+      {
+        "name": "가온전선",
+        "code": "000500",
+        "base_price": 367000,
+        "theme": "전선"
+      },
+      {
+        "name": "대한전선",
+        "code": "001440",
+        "base_price": 69200,
+        "theme": "전선"
+      },
+      {
+        "name": "LS",
+        "code": "006260",
+        "base_price": 531000,
+        "theme": "전선"
+      },
+      {
+        "name": "대원전선",
+        "code": "006340",
+        "base_price": 18040,
+        "theme": "전선"
+      },
+      {
+        "name": "유안타증권",
+        "code": "003470",
+        "base_price": 7830,
+        "theme": "증권"
+      },
+      {
+        "name": "미래에셋증권",
+        "code": "006800",
+        "base_price": 83800,
+        "theme": "증권"
+      },
+      {
+        "name": "키움증권",
+        "code": "039490",
+        "base_price": 484500,
+        "theme": "증권"
+      },
+      {
+        "name": "한화투자증권",
+        "code": "003530",
+        "base_price": 9370,
+        "theme": "증권"
+      },
+      {
+        "name": "한국금융지주",
+        "code": "071050",
+        "base_price": 291500,
+        "theme": "증권"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 266000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 1601000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "DB하이텍",
+        "code": "000990",
+        "base_price": 162000,
+        "theme": "반도체 대표주(생산)"
+      }
+    ]
   }
 ]
