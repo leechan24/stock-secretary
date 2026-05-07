@@ -506,5 +506,138 @@
         "theme": "반도체 대표주(생산)"
       }
     ]
+  },
+  {
+    "date": "2026-05-07",
+    "market": {
+      "date": "2026-05-07",
+      "usd_krw": 1456.95,
+      "rate_chg_pct": -1.15,
+      "vix": 17.08,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "GS건설",
+        "code": "006360",
+        "base_price": 39350,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "삼성물산",
+        "code": "028260",
+        "base_price": 405000,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "DL이앤씨",
+        "code": "375500",
+        "base_price": 100300,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "IPARK현대산업개발",
+        "code": "294870",
+        "base_price": 23400,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "대우건설",
+        "code": "047040",
+        "base_price": 33200,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "수산세보틱스",
+        "code": "017550",
+        "base_price": 3860,
+        "theme": "건설기계"
+      },
+      {
+        "name": "현대에버다임",
+        "code": "041440",
+        "base_price": 10430,
+        "theme": "건설기계"
+      },
+      {
+        "name": "혜인",
+        "code": "003010",
+        "base_price": 7920,
+        "theme": "건설기계"
+      },
+      {
+        "name": "전진건설로봇",
+        "code": "079900",
+        "base_price": 68400,
+        "theme": "건설기계"
+      },
+      {
+        "name": "진성티이씨",
+        "code": "036890",
+        "base_price": 20550,
+        "theme": "건설기계"
+      },
+      {
+        "name": "희림",
+        "code": "037440",
+        "base_price": 7460,
+        "theme": "우크라이나 재건"
+      },
+      {
+        "name": "수산세보틱스",
+        "code": "017550",
+        "base_price": 3860,
+        "theme": "우크라이나 재건"
+      },
+      {
+        "name": "삼성E&A",
+        "code": "028050",
+        "base_price": 64400,
+        "theme": "우크라이나 재건"
+      },
+      {
+        "name": "현대에버다임",
+        "code": "041440",
+        "base_price": 10430,
+        "theme": "우크라이나 재건"
+      },
+      {
+        "name": "혜인",
+        "code": "003010",
+        "base_price": 7920,
+        "theme": "우크라이나 재건"
+      },
+      {
+        "name": "GS건설",
+        "code": "006360",
+        "base_price": 39350,
+        "theme": "모듈러주택"
+      },
+      {
+        "name": "에스와이",
+        "code": "109610",
+        "base_price": 3055,
+        "theme": "모듈러주택"
+      },
+      {
+        "name": "삼성물산",
+        "code": "028260",
+        "base_price": 405000,
+        "theme": "모듈러주택"
+      },
+      {
+        "name": "POSCO홀딩스",
+        "code": "005490",
+        "base_price": 535000,
+        "theme": "모듈러주택"
+      },
+      {
+        "name": "덕신이피씨",
+        "code": "090410",
+        "base_price": 1305,
+        "theme": "모듈러주택"
+      }
+    ]
   }
 ]
