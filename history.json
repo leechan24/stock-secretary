@@ -747,8 +747,8 @@
     "date": "2026-05-12",
     "market": {
       "date": "2026-05-12",
-      "usd_krw": 1475.85,
-      "rate_chg_pct": 1.45,
+      "usd_krw": 1475.78,
+      "rate_chg_pct": 1.04,
       "vix": 18.38,
       "status": "경계 🚨",
       "total_weight": "0%~5% (관망)"
