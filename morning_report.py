@@ -3,15 +3,18 @@ import requests
 import json
 import re
 import time
-from datetime import datetime
+from datetime import datetime, timedelta, timezone  # timezone 추가
 import pandas as pd
 from bs4 import BeautifulSoup
 import yfinance as yf
 from dotenv import load_dotenv
 from google import genai
-import exchange_calendars as xcals  # 휴장일 체크용
+import exchange_calendars as xcals
 
 load_dotenv()
+
+# --- [설정] 한국 시간(KST) 상수 ---
+KST = timezone(timedelta(hours=9))
 
 def clean_val(key):
     val = os.getenv(key, "")
@@ -26,19 +29,16 @@ naver_secret = clean_val("NAVER_CLIENT_SECRET")
 
 client = genai.Client(api_key=api_key)
 
-# --- [추가] 국장 휴장 여부 확인 함수 ---
 def is_kr_market_open():
     try:
-        # 한국 거래소(XKRX) 달력 기준
         krx = xcals.get_calendar("XKRX")
-        today = datetime.now().strftime("%Y-%m-%d")
-        return krx.is_session(today)
+        # 현재 시간을 KST로 변환 후 날짜 추출
+        today_kst = datetime.now(KST).strftime("%Y-%m-%d")
+        return krx.is_session(today_kst)
     except:
-        # 에러 발생 시 안전하게 '열림'으로 가정하거나 평일 여부로 판단
-        return datetime.now().weekday() < 5
+        return datetime.now(KST).weekday() < 5
 
 def save_to_history(date, picks, market_data, history_file="history.json"):
-    """오늘의 마켓 지표와 추천 종목을 history.json에 통합 저장"""
     history_data = []
     if os.path.exists(history_file):
         try:
@@ -62,8 +62,9 @@ def save_to_history(date, picks, market_data, history_file="history.json"):
 
 def get_market_status():
     try:
-        # 데이터 시점이 아닌 '오늘 리포트 발행일'을 기준으로 설정
-        today_str = datetime.now().strftime("%Y-%m-%d")
+        # 한국 시간 기준으로 오늘 날짜 설정
+        today_kst = datetime.now(KST)
+        today_str = today_kst.strftime("%Y-%m-%d")
         
         df_fx = yf.Ticker("KRW=X").history(period="5d")
         df_vix = yf.Ticker("^VIX").history(period="5d")
@@ -88,7 +89,7 @@ def get_market_status():
             "total_weight": weight
         }
     except:
-        return {"date": datetime.now().strftime("%Y-%m-%d"), "status": "확인불가", "usd_krw": 0, "vix": 0, "rate_chg_pct": 0, "total_weight": "데이터 확인 불가"}
+        return {"date": datetime.now(KST).strftime("%Y-%m-%d"), "status": "확인불가", "usd_krw": 0, "vix": 0, "rate_chg_pct": 0, "total_weight": "데이터 확인 불가"}
 
 def get_stock_price(ticker):
     try:
@@ -117,12 +118,11 @@ def get_naver_news(query):
     return "  • 관련 뉴스가 없습니다."
 
 if __name__ == "__main__":
-    print("🐭 쥐사장 분석기 가동!")
+    print("🐭 쥐사장 분석기 가동 (KST 기준)!")
     
     market_open = is_kr_market_open()
     m = get_market_status()
     
-    # 1. 미장 섹터 분석 (휴장 상관없이 수행)
     sectors = {"XLK": "반도체", "XLE": "에너지", "XLV": "바이오", "XLB": "소재", "XLI": "산업재"}
     us_perf = []
     for s, name in sectors.items():
@@ -135,16 +135,13 @@ if __name__ == "__main__":
     all_picks_for_history = []
     refined_themes = []
 
-    # 2. 휴장일 여부에 따른 분기 처리
     if not market_open:
-        report_header = f"🚩 <b>오늘은 국장 휴장일입니다.</b>\n"
+        report_header = f"🚩 <b>오늘은 국장 휴장일입니다. ({m['date']})</b>\n"
         report_instruction = "오늘은 휴장일이니 매매는 쉬고, 미장 흐름을 통해 다음 전략을 구상해라."
-        print("🚩 오늘은 휴장일입니다. 리포트만 생성하고 기록은 스킵합니다.")
     else:
         report_header = f"📅 <b>{m['date']} 프리미엄 브리핑</b>\n"
         report_instruction = "전일 종가를 기준으로 구체적인 가격([숫자]원)을 계산해서 전략을 제시해라."
         
-        # 국장 데이터 수집 (장 열릴 때만 수행)
         try:
             res = requests.get("https://finance.naver.com/sise/theme.naver", headers={'User-Agent': 'Mozilla/5.0'})
             soup = BeautifulSoup(res.text, 'html.parser')
@@ -173,7 +170,6 @@ if __name__ == "__main__":
         except:
             refined_themes = ["국장 데이터 로드 실패"]
 
-    # 3. AI 분석 및 리포트 생성
     try:
         print(f"🤖 쥐사장 AI 분석 중...")
         prompt = f"""
@@ -193,7 +189,6 @@ if __name__ == "__main__":
         response = client.models.generate_content(model="gemini-flash-latest", contents=prompt)
         report_content = response.text
 
-        # 뉴스 매칭 (장 열릴 때만 수행)
         if market_open:
             queries = re.findall(r"\[NEWS_QUERY: (.+?)\]", report_content)
             for q in queries:
@@ -201,16 +196,14 @@ if __name__ == "__main__":
 
         full_msg = report_header + report_content
         
-        # 텔레그램 발송
         requests.post(f"https://api.telegram.org/bot{telegram_token}/sendMessage", 
                       json={"chat_id": telegram_chat_id, "text": full_msg, "parse_mode": "HTML", "disable_web_page_preview": True})
         
-        # 4. 데이터 저장 (장 열릴 때만 수행하여 타율 왜곡 방지)
         if market_open:
             save_to_history(m['date'], all_picks_for_history, m)
-            print("✨ 리포트 발송 및 통합 데이터 기록 완료!")
+            print(f"✨ {m['date']} 리포트 발송 및 데이터 기록 완료!")
         else:
-            print("✨ 휴장일 리포트 발송 완료 (기록 제외)")
+            print("✨ 휴장일 리포트 발송 완료")
 
     except Exception as e:
         print(f"❌ 오류 발생: {e}")
