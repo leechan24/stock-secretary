@@ -1208,5 +1208,138 @@
         "theme": "엔젤산업"
       }
     ]
+  },
+  {
+    "date": "2026-05-18",
+    "market": {
+      "date": "2026-05-18",
+      "usd_krw": 1498.25,
+      "rate_chg_pct": 0.33,
+      "vix": 18.43,
+      "status": "주의 ⚠️",
+      "total_weight": "10%~15% (방망이 짧게)"
+    },
+    "picks": [
+      {
+        "name": "동양고속",
+        "code": "084670",
+        "base_price": 65800,
+        "theme": "서울고속버스터미널 재개발 수혜"
+      },
+      {
+        "name": "천일고속",
+        "code": "000650",
+        "base_price": 330500,
+        "theme": "서울고속버스터미널 재개발 수혜"
+      },
+      {
+        "name": "신세계",
+        "code": "004170",
+        "base_price": 541000,
+        "theme": "서울고속버스터미널 재개발 수혜"
+      },
+      {
+        "name": "동원산업",
+        "code": "006040",
+        "base_price": 38100,
+        "theme": "서울고속버스터미널 재개발 수혜"
+      },
+      {
+        "name": "대성산업",
+        "code": "128820",
+        "base_price": 7320,
+        "theme": "서울고속버스터미널 재개발 수혜"
+      },
+      {
+        "name": "한국쉘석유",
+        "code": "002960",
+        "base_price": 580000,
+        "theme": "윤활유"
+      },
+      {
+        "name": "흥구석유",
+        "code": "024060",
+        "base_price": 15130,
+        "theme": "윤활유"
+      },
+      {
+        "name": "GS",
+        "code": "078930",
+        "base_price": 77300,
+        "theme": "윤활유"
+      },
+      {
+        "name": "미창석유",
+        "code": "003650",
+        "base_price": 123400,
+        "theme": "윤활유"
+      },
+      {
+        "name": "극동유화",
+        "code": "014530",
+        "base_price": 3565,
+        "theme": "윤활유"
+      },
+      {
+        "name": "앤씨앤",
+        "code": "092600",
+        "base_price": 6410,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "아이디스",
+        "code": "143160",
+        "base_price": 17450,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "비츠로시스",
+        "code": "054220",
+        "base_price": 2740,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "코콤",
+        "code": "015710",
+        "base_price": 3510,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "포커스에이아이",
+        "code": "331380",
+        "base_price": 2060,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "코나아이",
+        "code": "052400",
+        "base_price": 70000,
+        "theme": "지역화폐"
+      },
+      {
+        "name": "웹케시",
+        "code": "053580",
+        "base_price": 8160,
+        "theme": "지역화폐"
+      },
+      {
+        "name": "유라클",
+        "code": "088340",
+        "base_price": 11290,
+        "theme": "지역화폐"
+      },
+      {
+        "name": "쿠콘",
+        "code": "294570",
+        "base_price": 27250,
+        "theme": "지역화폐"
+      },
+      {
+        "name": "갤럭시아머니트리",
+        "code": "094480",
+        "base_price": 7070,
+        "theme": "지역화폐"
+      }
+    ]
   }
 ]
