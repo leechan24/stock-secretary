@@ -1341,5 +1341,138 @@
         "theme": "지역화폐"
       }
     ]
+  },
+  {
+    "date": "2026-05-19",
+    "market": {
+      "date": "2026-05-19",
+      "usd_krw": 1487.96,
+      "rate_chg_pct": -0.36,
+      "vix": 17.82,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "켄코아에어로스페이스",
+        "code": "274090",
+        "base_price": 25950,
+        "theme": "스페이스X(SpaceX)"
+      },
+      {
+        "name": "에이치브이엠",
+        "code": "295310",
+        "base_price": 125300,
+        "theme": "스페이스X(SpaceX)"
+      },
+      {
+        "name": "센서뷰",
+        "code": "321370",
+        "base_price": 3685,
+        "theme": "스페이스X(SpaceX)"
+      },
+      {
+        "name": "미래에셋벤처투자",
+        "code": "100790",
+        "base_price": 67400,
+        "theme": "스페이스X(SpaceX)"
+      },
+      {
+        "name": "아주IB투자",
+        "code": "027360",
+        "base_price": 17010,
+        "theme": "스페이스X(SpaceX)"
+      },
+      {
+        "name": "주성엔지니어링",
+        "code": "036930",
+        "base_price": 182200,
+        "theme": "LED장비"
+      },
+      {
+        "name": "레이저쎌",
+        "code": "412350",
+        "base_price": 14080,
+        "theme": "LED장비"
+      },
+      {
+        "name": "티에스이",
+        "code": "131290",
+        "base_price": 223000,
+        "theme": "LED장비"
+      },
+      {
+        "name": "프로텍",
+        "code": "053610",
+        "base_price": 92100,
+        "theme": "LED장비"
+      },
+      {
+        "name": "이오테크닉스",
+        "code": "039030",
+        "base_price": 485000,
+        "theme": "LED장비"
+      },
+      {
+        "name": "켄코아에어로스페이스",
+        "code": "274090",
+        "base_price": 25950,
+        "theme": "우주항공산업(누리호/인공위성 등)"
+      },
+      {
+        "name": "에이치브이엠",
+        "code": "295310",
+        "base_price": 125300,
+        "theme": "우주항공산업(누리호/인공위성 등)"
+      },
+      {
+        "name": "센서뷰",
+        "code": "321370",
+        "base_price": 3685,
+        "theme": "우주항공산업(누리호/인공위성 등)"
+      },
+      {
+        "name": "AP위성",
+        "code": "211270",
+        "base_price": 18020,
+        "theme": "우주항공산업(누리호/인공위성 등)"
+      },
+      {
+        "name": "스피어",
+        "code": "347700",
+        "base_price": 48150,
+        "theme": "우주항공산업(누리호/인공위성 등)"
+      },
+      {
+        "name": "아주IB투자",
+        "code": "027360",
+        "base_price": 17010,
+        "theme": "야놀자(Yanolja)"
+      },
+      {
+        "name": "한화생명",
+        "code": "088350",
+        "base_price": 5670,
+        "theme": "야놀자(Yanolja)"
+      },
+      {
+        "name": "그래디언트",
+        "code": "035080",
+        "base_price": 10380,
+        "theme": "야놀자(Yanolja)"
+      },
+      {
+        "name": "SBI인베스트먼트",
+        "code": "019550",
+        "base_price": 638,
+        "theme": "야놀자(Yanolja)"
+      },
+      {
+        "name": "한화투자증권",
+        "code": "003530",
+        "base_price": 6850,
+        "theme": "야놀자(Yanolja)"
+      }
+    ]
   }
 ]
