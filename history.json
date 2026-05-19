@@ -1474,5 +1474,138 @@
         "theme": "야놀자(Yanolja)"
       }
     ]
+  },
+  {
+    "date": "2026-05-20",
+    "market": {
+      "date": "2026-05-20",
+      "usd_krw": 1506.78,
+      "rate_chg_pct": 0.64,
+      "vix": 18.06,
+      "status": "경계 🚨",
+      "total_weight": "0%~5% (관망)"
+    },
+    "picks": [
+      {
+        "name": "바른손이앤에이",
+        "code": "035620",
+        "base_price": 1341,
+        "theme": "영화"
+      },
+      {
+        "name": "졸스",
+        "code": "018700",
+        "base_price": 2290,
+        "theme": "영화"
+      },
+      {
+        "name": "콘텐트리중앙",
+        "code": "036420",
+        "base_price": 5970,
+        "theme": "영화"
+      },
+      {
+        "name": "롯데쇼핑",
+        "code": "023530",
+        "base_price": 161100,
+        "theme": "영화"
+      },
+      {
+        "name": "CJ ENM",
+        "code": "035760",
+        "base_price": 42700,
+        "theme": "영화"
+      },
+      {
+        "name": "진원생명과학",
+        "code": "011000",
+        "base_price": 1366,
+        "theme": "mRNA(메신저 리보핵산)"
+      },
+      {
+        "name": "아이진",
+        "code": "185490",
+        "base_price": 1722,
+        "theme": "mRNA(메신저 리보핵산)"
+      },
+      {
+        "name": "이연제약",
+        "code": "102460",
+        "base_price": 12130,
+        "theme": "mRNA(메신저 리보핵산)"
+      },
+      {
+        "name": "아미노로직스",
+        "code": "074430",
+        "base_price": 1276,
+        "theme": "mRNA(메신저 리보핵산)"
+      },
+      {
+        "name": "에스티팜",
+        "code": "237690",
+        "base_price": 128600,
+        "theme": "mRNA(메신저 리보핵산)"
+      },
+      {
+        "name": "티웨이홀딩스",
+        "code": "004870",
+        "base_price": 308,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "에어부산",
+        "code": "298690",
+        "base_price": 1943,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "대한항공",
+        "code": "003490",
+        "base_price": 25800,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "한진칼",
+        "code": "180640",
+        "base_price": 111600,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "진에어",
+        "code": "272450",
+        "base_price": 6070,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "한화손해보험",
+        "code": "000370",
+        "base_price": 7650,
+        "theme": "손해보험"
+      },
+      {
+        "name": "서울보증보험",
+        "code": "031210",
+        "base_price": 48100,
+        "theme": "손해보험"
+      },
+      {
+        "name": "롯데손해보험",
+        "code": "000400",
+        "base_price": 2275,
+        "theme": "손해보험"
+      },
+      {
+        "name": "DB손해보험",
+        "code": "005830",
+        "base_price": 164100,
+        "theme": "손해보험"
+      },
+      {
+        "name": "현대해상",
+        "code": "001450",
+        "base_price": 38850,
+        "theme": "손해보험"
+      }
+    ]
   }
 ]
