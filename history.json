@@ -1607,5 +1607,120 @@
         "theme": "손해보험"
       }
     ]
+  },
+  {
+    "date": "2026-05-21",
+    "market": {
+      "date": "2026-05-21",
+      "usd_krw": 1496.42,
+      "rate_chg_pct": 0.27,
+      "vix": 17.44,
+      "status": "주의 ⚠️",
+      "total_weight": "10%~15% (방망이 짧게)"
+    },
+    "picks": [
+      {
+        "name": "마키나락스",
+        "code": "477850",
+        "base_price": 60000,
+        "theme": "2026 상반기 신규상장"
+      },
+      {
+        "name": "코스모로보틱스",
+        "code": "439960",
+        "base_price": 56200,
+        "theme": "2026 상반기 신규상장"
+      },
+      {
+        "name": "리센스메디컬",
+        "code": "394420",
+        "base_price": 26950,
+        "theme": "2026 상반기 신규상장"
+      },
+      {
+        "name": "폴레드",
+        "code": "487580",
+        "base_price": 8690,
+        "theme": "2026 상반기 신규상장"
+      },
+      {
+        "name": "코칩",
+        "code": "126730",
+        "base_price": 20200,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "삼화콘덴서",
+        "code": "001820",
+        "base_price": 78600,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "지아이에스",
+        "code": "306620",
+        "base_price": 2680,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "삼성전기",
+        "code": "009150",
+        "base_price": 1061000,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "아바텍",
+        "code": "149950",
+        "base_price": 12650,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "광전자",
+        "code": "017900",
+        "base_price": 12450,
+        "theme": "마이크로 LED"
+      },
+      {
+        "name": "영우디에스피",
+        "code": "143540",
+        "base_price": 1655,
+        "theme": "마이크로 LED"
+      },
+      {
+        "name": "루멘스",
+        "code": "038060",
+        "base_price": 1427,
+        "theme": "마이크로 LED"
+      },
+      {
+        "name": "서울반도체",
+        "code": "046890",
+        "base_price": 14440,
+        "theme": "마이크로 LED"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 276000,
+        "theme": "마이크로 LED"
+      },
+      {
+        "name": "DB하이텍",
+        "code": "000990",
+        "base_price": 162000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 276000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 1745000,
+        "theme": "반도체 대표주(생산)"
+      }
+    ]
   }
 ]
