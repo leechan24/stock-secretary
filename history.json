@@ -1722,5 +1722,138 @@
         "theme": "반도체 대표주(생산)"
       }
     ]
+  },
+  {
+    "date": "2026-05-22",
+    "market": {
+      "date": "2026-05-22",
+      "usd_krw": 1503.98,
+      "rate_chg_pct": -0.26,
+      "vix": 16.76,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "LG전자",
+        "code": "066570",
+        "base_price": 235000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "LG디스플레이",
+        "code": "034220",
+        "base_price": 14740,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "삼성에스디에스",
+        "code": "018260",
+        "base_price": 185300,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 1940000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 299500,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "현대모비스",
+        "code": "012330",
+        "base_price": 670000,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "현대위아",
+        "code": "011210",
+        "base_price": 90300,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "HL만도",
+        "code": "204320",
+        "base_price": 60400,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "현대차",
+        "code": "005380",
+        "base_price": 666000,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "기아",
+        "code": "000270",
+        "base_price": 167900,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "KBI메탈",
+        "code": "024840",
+        "base_price": 6890,
+        "theme": "전선"
+      },
+      {
+        "name": "LS에코에너지",
+        "code": "229640",
+        "base_price": 89400,
+        "theme": "전선"
+      },
+      {
+        "name": "가온전선",
+        "code": "000500",
+        "base_price": 409000,
+        "theme": "전선"
+      },
+      {
+        "name": "대원전선",
+        "code": "006340",
+        "base_price": 15220,
+        "theme": "전선"
+      },
+      {
+        "name": "일진전기",
+        "code": "103590",
+        "base_price": 110400,
+        "theme": "전선"
+      },
+      {
+        "name": "아이엘",
+        "code": "307180",
+        "base_price": 8550,
+        "theme": "피지컬 AI/휴머노이드 로봇"
+      },
+      {
+        "name": "LG전자",
+        "code": "066570",
+        "base_price": 235000,
+        "theme": "피지컬 AI/휴머노이드 로봇"
+      },
+      {
+        "name": "현대모비스",
+        "code": "012330",
+        "base_price": 670000,
+        "theme": "피지컬 AI/휴머노이드 로봇"
+      },
+      {
+        "name": "한국피아이엠",
+        "code": "448900",
+        "base_price": 98000,
+        "theme": "피지컬 AI/휴머노이드 로봇"
+      },
+      {
+        "name": "뉴로메카",
+        "code": "348340",
+        "base_price": 66300,
+        "theme": "피지컬 AI/휴머노이드 로봇"
+      }
+    ]
   }
 ]
