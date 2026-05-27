@@ -2109,5 +2109,126 @@
         "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
       }
     ]
+  },
+  {
+    "date": "2026-05-28",
+    "market": {
+      "date": "2026-05-28",
+      "usd_krw": 1501.4,
+      "rate_chg_pct": -0.88,
+      "vix": 16.29,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "삼성에스디에스",
+        "code": "018260",
+        "base_price": 261500,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 2242625,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 307000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "삼성SDI",
+        "code": "006400",
+        "base_price": 630000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "LG전자",
+        "code": "066570",
+        "base_price": 235000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 2242625,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 307000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "DB하이텍",
+        "code": "000990",
+        "base_price": 202000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "3S",
+        "code": "060310",
+        "base_price": 1739,
+        "theme": "냉각시스템(액침냉각 등)"
+      },
+      {
+        "name": "SK",
+        "code": "034730",
+        "base_price": 680000,
+        "theme": "냉각시스템(액침냉각 등)"
+      },
+      {
+        "name": "케이엔솔",
+        "code": "053080",
+        "base_price": 13700,
+        "theme": "냉각시스템(액침냉각 등)"
+      },
+      {
+        "name": "GST",
+        "code": "083450",
+        "base_price": 60200,
+        "theme": "냉각시스템(액침냉각 등)"
+      },
+      {
+        "name": "유니셈",
+        "code": "036200",
+        "base_price": 12250,
+        "theme": "냉각시스템(액침냉각 등)"
+      },
+      {
+        "name": "삼성에스디에스",
+        "code": "018260",
+        "base_price": 261500,
+        "theme": "SI(시스템통합)"
+      },
+      {
+        "name": "현대오토에버",
+        "code": "307950",
+        "base_price": 765000,
+        "theme": "SI(시스템통합)"
+      },
+      {
+        "name": "LG씨엔에스",
+        "code": "064400",
+        "base_price": 94600,
+        "theme": "SI(시스템통합)"
+      },
+      {
+        "name": "나무기술",
+        "code": "242040",
+        "base_price": 6620,
+        "theme": "SI(시스템통합)"
+      },
+      {
+        "name": "SK",
+        "code": "034730",
+        "base_price": 680000,
+        "theme": "SI(시스템통합)"
+      }
+    ]
   }
 ]
