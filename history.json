@@ -2230,5 +2230,126 @@
         "theme": "SI(시스템통합)"
       }
     ]
+  },
+  {
+    "date": "2026-05-29",
+    "market": {
+      "date": "2026-05-29",
+      "usd_krw": 1493.51,
+      "rate_chg_pct": -0.79,
+      "vix": 15.74,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "코칩",
+        "code": "126730",
+        "base_price": 30800,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "삼화콘덴서",
+        "code": "001820",
+        "base_price": 156200,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "원준",
+        "code": "382840",
+        "base_price": 10040,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "삼성전기",
+        "code": "009150",
+        "base_price": 1849000,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "아바텍",
+        "code": "149950",
+        "base_price": 15680,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "LG에너지솔루션",
+        "code": "373220",
+        "base_price": 442000,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "삼성SDI",
+        "code": "006400",
+        "base_price": 676000,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 117000,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "유성티엔에스",
+        "code": "024800",
+        "base_price": 5980,
+        "theme": "편의점"
+      },
+      {
+        "name": "롯데지주",
+        "code": "004990",
+        "base_price": 25800,
+        "theme": "편의점"
+      },
+      {
+        "name": "이마트",
+        "code": "139480",
+        "base_price": 87100,
+        "theme": "편의점"
+      },
+      {
+        "name": "BGF리테일",
+        "code": "282330",
+        "base_price": 123700,
+        "theme": "편의점"
+      },
+      {
+        "name": "GS리테일",
+        "code": "007070",
+        "base_price": 25350,
+        "theme": "편의점"
+      },
+      {
+        "name": "LG에너지솔루션",
+        "code": "373220",
+        "base_price": 442000,
+        "theme": "2차전지(나트륨이온)"
+      },
+      {
+        "name": "더블유씨피",
+        "code": "393890",
+        "base_price": 17260,
+        "theme": "2차전지(나트륨이온)"
+      },
+      {
+        "name": "삼성SDI",
+        "code": "006400",
+        "base_price": 676000,
+        "theme": "2차전지(나트륨이온)"
+      },
+      {
+        "name": "에코프로비엠",
+        "code": "247540",
+        "base_price": 218500,
+        "theme": "2차전지(나트륨이온)"
+      },
+      {
+        "name": "애경케미칼",
+        "code": "161000",
+        "base_price": 13560,
+        "theme": "2차전지(나트륨이온)"
+      }
+    ]
   }
 ]
