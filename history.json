@@ -2351,5 +2351,120 @@
         "theme": "2차전지(나트륨이온)"
       }
     ]
+  },
+  {
+    "date": "2026-06-01",
+    "market": {
+      "date": "2026-06-01",
+      "usd_krw": 1506.93,
+      "rate_chg_pct": 0.78,
+      "vix": 15.32,
+      "status": "경계 🚨",
+      "total_weight": "0%~5% (관망)"
+    },
+    "picks": [
+      {
+        "name": "LG전자",
+        "code": "066570",
+        "base_price": 293000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "삼성에스디에스",
+        "code": "018260",
+        "base_price": 299000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "LG디스플레이",
+        "code": "034220",
+        "base_price": 16090,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 317000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 2333000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "NAVER",
+        "code": "035420",
+        "base_price": 234000,
+        "theme": "인터넷 대표주"
+      },
+      {
+        "name": "카카오",
+        "code": "035720",
+        "base_price": 41950,
+        "theme": "인터넷 대표주"
+      },
+      {
+        "name": "TS인베스트먼트",
+        "code": "246690",
+        "base_price": 1527,
+        "theme": "퓨리오사AI"
+      },
+      {
+        "name": "포바이포",
+        "code": "389140",
+        "base_price": 8370,
+        "theme": "퓨리오사AI"
+      },
+      {
+        "name": "엑스페릭스",
+        "code": "317770",
+        "base_price": 3400,
+        "theme": "퓨리오사AI"
+      },
+      {
+        "name": "DSC인베스트먼트",
+        "code": "241520",
+        "base_price": 14100,
+        "theme": "퓨리오사AI"
+      },
+      {
+        "name": "와이즈넛",
+        "code": "096250",
+        "base_price": 8600,
+        "theme": "퓨리오사AI"
+      },
+      {
+        "name": "현대모비스",
+        "code": "012330",
+        "base_price": 768000,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "한온시스템",
+        "code": "018880",
+        "base_price": 5630,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "현대차",
+        "code": "005380",
+        "base_price": 723000,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "현대위아",
+        "code": "011210",
+        "base_price": 91000,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "기아",
+        "code": "000270",
+        "base_price": 169200,
+        "theme": "자동차 대표주"
+      }
+    ]
   }
 ]
