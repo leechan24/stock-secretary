@@ -2708,5 +2708,138 @@
         "theme": "백화점"
       }
     ]
+  },
+  {
+    "date": "2026-06-05",
+    "market": {
+      "date": "2026-06-05",
+      "usd_krw": 1532.71,
+      "rate_chg_pct": 1.06,
+      "vix": 15.4,
+      "status": "경계 🚨",
+      "total_weight": "0%~5% (관망)"
+    },
+    "picks": [
+      {
+        "name": "신세계",
+        "code": "004170",
+        "base_price": 659000,
+        "theme": "백화점"
+      },
+      {
+        "name": "현대백화점",
+        "code": "069960",
+        "base_price": 139800,
+        "theme": "백화점"
+      },
+      {
+        "name": "롯데쇼핑",
+        "code": "023530",
+        "base_price": 172000,
+        "theme": "백화점"
+      },
+      {
+        "name": "광주신세계",
+        "code": "037710",
+        "base_price": 35200,
+        "theme": "백화점"
+      },
+      {
+        "name": "한화갤러리아",
+        "code": "452260",
+        "base_price": 2785,
+        "theme": "백화점"
+      },
+      {
+        "name": "유진테크",
+        "code": "084370",
+        "base_price": 155700,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "팸텍",
+        "code": "271830",
+        "base_price": 2360,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "원익IPS",
+        "code": "240810",
+        "base_price": 127200,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "테스",
+        "code": "095610",
+        "base_price": 135900,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "브이엠",
+        "code": "089970",
+        "base_price": 69500,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "덕산하이메탈",
+        "code": "077360",
+        "base_price": 15010,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "네오티스",
+        "code": "085910",
+        "base_price": 33750,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "코리아써키트",
+        "code": "007810",
+        "base_price": 122300,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "기가비스",
+        "code": "420770",
+        "base_price": 139400,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "태성",
+        "code": "323280",
+        "base_price": 57000,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "라이콤",
+        "code": "388790",
+        "base_price": 4910,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "RFHIC",
+        "code": "218410",
+        "base_price": 90900,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "성호전자",
+        "code": "043260",
+        "base_price": 51400,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "빛과전자",
+        "code": "069540",
+        "base_price": 4185,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "머큐리",
+        "code": "100590",
+        "base_price": 5720,
+        "theme": "광통신(광케이블/광섬유 등)"
+      }
+    ]
   }
 ]
