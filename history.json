@@ -2841,5 +2841,138 @@
         "theme": "광통신(광케이블/광섬유 등)"
       }
     ]
+  },
+  {
+    "date": "2026-06-08",
+    "market": {
+      "date": "2026-06-08",
+      "usd_krw": 1559.43,
+      "rate_chg_pct": 1.72,
+      "vix": 21.51,
+      "status": "경계 🚨",
+      "total_weight": "0%~5% (관망)"
+    },
+    "picks": [
+      {
+        "name": "한켐",
+        "code": "457370",
+        "base_price": 14670,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "아바텍",
+        "code": "149950",
+        "base_price": 16150,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "코칩",
+        "code": "126730",
+        "base_price": 23500,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "삼성전기",
+        "code": "009150",
+        "base_price": 1757000,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "지아이에스",
+        "code": "306620",
+        "base_price": 2690,
+        "theme": "MLCC(적층세라믹콘덴서)"
+      },
+      {
+        "name": "신한지주",
+        "code": "055550",
+        "base_price": 107500,
+        "theme": "은행"
+      },
+      {
+        "name": "제주은행",
+        "code": "006220",
+        "base_price": 10680,
+        "theme": "은행"
+      },
+      {
+        "name": "KB금융",
+        "code": "105560",
+        "base_price": 171600,
+        "theme": "은행"
+      },
+      {
+        "name": "우리금융지주",
+        "code": "316140",
+        "base_price": 31200,
+        "theme": "은행"
+      },
+      {
+        "name": "하나금융지주",
+        "code": "086790",
+        "base_price": 123600,
+        "theme": "은행"
+      },
+      {
+        "name": "파라다이스",
+        "code": "034230",
+        "base_price": 15500,
+        "theme": "카지노"
+      },
+      {
+        "name": "GKL",
+        "code": "114090",
+        "base_price": 11860,
+        "theme": "카지노"
+      },
+      {
+        "name": "롯데관광개발",
+        "code": "032350",
+        "base_price": 18330,
+        "theme": "카지노"
+      },
+      {
+        "name": "강원랜드",
+        "code": "035250",
+        "base_price": 15060,
+        "theme": "카지노"
+      },
+      {
+        "name": "코텍",
+        "code": "052330",
+        "base_price": 10950,
+        "theme": "카지노"
+      },
+      {
+        "name": "모헨즈",
+        "code": "006920",
+        "base_price": 4175,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "HC보광산업",
+        "code": "225530",
+        "base_price": 2315,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "SG",
+        "code": "255220",
+        "base_price": 1967,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "아세아시멘트",
+        "code": "183190",
+        "base_price": 9570,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "HC홈센타",
+        "code": "060560",
+        "base_price": 1987,
+        "theme": "시멘트/레미콘"
+      }
+    ]
   }
 ]
