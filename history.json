@@ -3228,5 +3228,138 @@
         "theme": "조선"
       }
     ]
+  },
+  {
+    "date": "2026-06-12",
+    "market": {
+      "date": "2026-06-12",
+      "usd_krw": 1516.01,
+      "rate_chg_pct": -0.64,
+      "vix": 19.44,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "엠케이전자",
+        "code": "033160",
+        "base_price": 28000,
+        "theme": "소캠(SOCAMM)"
+      },
+      {
+        "name": "심텍",
+        "code": "222800",
+        "base_price": 133300,
+        "theme": "소캠(SOCAMM)"
+      },
+      {
+        "name": "코리아써키트",
+        "code": "007810",
+        "base_price": 139200,
+        "theme": "소캠(SOCAMM)"
+      },
+      {
+        "name": "티에프이",
+        "code": "425420",
+        "base_price": 57300,
+        "theme": "소캠(SOCAMM)"
+      },
+      {
+        "name": "펨트론",
+        "code": "168360",
+        "base_price": 23150,
+        "theme": "소캠(SOCAMM)"
+      },
+      {
+        "name": "마니커",
+        "code": "027740",
+        "base_price": 1340,
+        "theme": "육계"
+      },
+      {
+        "name": "마니커에프앤지",
+        "code": "195500",
+        "base_price": 2320,
+        "theme": "육계"
+      },
+      {
+        "name": "푸드나무",
+        "code": "290720",
+        "base_price": 3215,
+        "theme": "육계"
+      },
+      {
+        "name": "체리부로",
+        "code": "066360",
+        "base_price": 799,
+        "theme": "육계"
+      },
+      {
+        "name": "하림",
+        "code": "136480",
+        "base_price": 2875,
+        "theme": "육계"
+      },
+      {
+        "name": "티에스이",
+        "code": "131290",
+        "base_price": 260000,
+        "theme": "LED장비"
+      },
+      {
+        "name": "주성엔지니어링",
+        "code": "036930",
+        "base_price": 245500,
+        "theme": "LED장비"
+      },
+      {
+        "name": "이오테크닉스",
+        "code": "039030",
+        "base_price": 504000,
+        "theme": "LED장비"
+      },
+      {
+        "name": "예스티",
+        "code": "122640",
+        "base_price": 27550,
+        "theme": "LED장비"
+      },
+      {
+        "name": "프로텍",
+        "code": "053610",
+        "base_price": 84500,
+        "theme": "LED장비"
+      },
+      {
+        "name": "심텍",
+        "code": "222800",
+        "base_price": 133300,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "코리아써키트",
+        "code": "007810",
+        "base_price": 139200,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "인텍플러스",
+        "code": "064290",
+        "base_price": 44000,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "다원넥스뷰",
+        "code": "323350",
+        "base_price": 14610,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "기가비스",
+        "code": "420770",
+        "base_price": 147600,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      }
+    ]
   }
 ]
