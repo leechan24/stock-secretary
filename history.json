@@ -3361,5 +3361,132 @@
         "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
       }
     ]
+  },
+  {
+    "date": "2026-06-16",
+    "market": {
+      "date": "2026-06-16",
+      "usd_krw": 1514.0,
+      "rate_chg_pct": -0.22,
+      "vix": 16.2,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "티웨이홀딩스",
+        "code": "004870",
+        "base_price": 362,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "제주항공",
+        "code": "089590",
+        "base_price": 5150,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "아시아나항공",
+        "code": "020560",
+        "base_price": 8050,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "트리니티항공",
+        "code": "091810",
+        "base_price": 894,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "에어부산",
+        "code": "298690",
+        "base_price": 1863,
+        "theme": "항공/저가 항공사(LCC)"
+      },
+      {
+        "name": "현대약품",
+        "code": "004310",
+        "base_price": 7440,
+        "theme": "낙태/피임"
+      },
+      {
+        "name": "알리코제약",
+        "code": "260660",
+        "base_price": 2840,
+        "theme": "낙태/피임"
+      },
+      {
+        "name": "명문제약",
+        "code": "017180",
+        "base_price": 1307,
+        "theme": "낙태/피임"
+      },
+      {
+        "name": "지엘팜텍",
+        "code": "204840",
+        "base_price": 890,
+        "theme": "낙태/피임"
+      },
+      {
+        "name": "TS트릴리온",
+        "code": "317240",
+        "base_price": 1206,
+        "theme": "탈모 치료"
+      },
+      {
+        "name": "JW신약",
+        "code": "067290",
+        "base_price": 1775,
+        "theme": "탈모 치료"
+      },
+      {
+        "name": "현대약품",
+        "code": "004310",
+        "base_price": 7440,
+        "theme": "탈모 치료"
+      },
+      {
+        "name": "위더스제약",
+        "code": "330350",
+        "base_price": 8180,
+        "theme": "탈모 치료"
+      },
+      {
+        "name": "샤페론",
+        "code": "378800",
+        "base_price": 1300,
+        "theme": "탈모 치료"
+      },
+      {
+        "name": "한온시스템",
+        "code": "018880",
+        "base_price": 5680,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "HL만도",
+        "code": "204320",
+        "base_price": 70600,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "현대위아",
+        "code": "011210",
+        "base_price": 82000,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "현대차",
+        "code": "005380",
+        "base_price": 647000,
+        "theme": "자동차 대표주"
+      },
+      {
+        "name": "현대모비스",
+        "code": "012330",
+        "base_price": 640000,
+        "theme": "자동차 대표주"
+      }
+    ]
   }
 ]
