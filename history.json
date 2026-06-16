@@ -3488,5 +3488,138 @@
         "theme": "자동차 대표주"
       }
     ]
+  },
+  {
+    "date": "2026-06-17",
+    "market": {
+      "date": "2026-06-17",
+      "usd_krw": 1512.91,
+      "rate_chg_pct": 0.23,
+      "vix": 16.41,
+      "status": "주의 ⚠️",
+      "total_weight": "10%~15% (방망이 짧게)"
+    },
+    "picks": [
+      {
+        "name": "대우건설",
+        "code": "047040",
+        "base_price": 27450,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "DL이앤씨",
+        "code": "375500",
+        "base_price": 89400,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "GS건설",
+        "code": "006360",
+        "base_price": 31850,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "현대건설",
+        "code": "000720",
+        "base_price": 147800,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "IPARK현대산업개발",
+        "code": "294870",
+        "base_price": 20750,
+        "theme": "건설 대표주"
+      },
+      {
+        "name": "씨에스윈드",
+        "code": "112610",
+        "base_price": 56800,
+        "theme": "풍력에너지"
+      },
+      {
+        "name": "씨에스베어링",
+        "code": "297090",
+        "base_price": 5860,
+        "theme": "풍력에너지"
+      },
+      {
+        "name": "SK오션플랜트",
+        "code": "100090",
+        "base_price": 21450,
+        "theme": "풍력에너지"
+      },
+      {
+        "name": "태웅",
+        "code": "044490",
+        "base_price": 41850,
+        "theme": "풍력에너지"
+      },
+      {
+        "name": "동국S&C",
+        "code": "100130",
+        "base_price": 1925,
+        "theme": "풍력에너지"
+      },
+      {
+        "name": "미래에셋생명",
+        "code": "085620",
+        "base_price": 32250,
+        "theme": "생명보험"
+      },
+      {
+        "name": "한화생명",
+        "code": "088350",
+        "base_price": 5550,
+        "theme": "생명보험"
+      },
+      {
+        "name": "동양생명",
+        "code": "082640",
+        "base_price": 8140,
+        "theme": "생명보험"
+      },
+      {
+        "name": "삼성생명",
+        "code": "032830",
+        "base_price": 431000,
+        "theme": "생명보험"
+      },
+      {
+        "name": "코리안리",
+        "code": "003690",
+        "base_price": 14000,
+        "theme": "생명보험"
+      },
+      {
+        "name": "LIG디펜스앤에어로스페이스",
+        "code": "079550",
+        "base_price": 1002000,
+        "theme": "항공기부품"
+      },
+      {
+        "name": "한화에어로스페이스",
+        "code": "012450",
+        "base_price": 1183000,
+        "theme": "항공기부품"
+      },
+      {
+        "name": "한국카본",
+        "code": "017960",
+        "base_price": 35650,
+        "theme": "항공기부품"
+      },
+      {
+        "name": "솔디펜스",
+        "code": "215090",
+        "base_price": 1820,
+        "theme": "항공기부품"
+      },
+      {
+        "name": "현대위아",
+        "code": "011210",
+        "base_price": 86100,
+        "theme": "항공기부품"
+      }
+    ]
   }
 ]
