@@ -3996,5 +3996,108 @@
         "theme": "유심(USIM)"
       }
     ]
+  },
+  {
+    "date": "2026-07-02",
+    "market": {
+      "date": "2026-07-02",
+      "usd_krw": 1553.3,
+      "rate_chg_pct": 0.75,
+      "vix": 16.59,
+      "status": "경계 🚨",
+      "total_weight": "0%~5% (관망)"
+    },
+    "picks": [
+      {
+        "name": "대원전선",
+        "code": "006340",
+        "base_price": 13400,
+        "theme": "전선"
+      },
+      {
+        "name": "KBI메탈",
+        "code": "024840",
+        "base_price": 4825,
+        "theme": "전선"
+      },
+      {
+        "name": "가온전선",
+        "code": "000500",
+        "base_price": 300500,
+        "theme": "전선"
+      },
+      {
+        "name": "LS에코에너지",
+        "code": "229640",
+        "base_price": 60700,
+        "theme": "전선"
+      },
+      {
+        "name": "일진전기",
+        "code": "103590",
+        "base_price": 83400,
+        "theme": "전선"
+      },
+      {
+        "name": "동신건설",
+        "code": "025950",
+        "base_price": 13780,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "남화토건",
+        "code": "091590",
+        "base_price": 9630,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "금호건설",
+        "code": "002990",
+        "base_price": 14540,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "일성건설",
+        "code": "013360",
+        "base_price": 1576,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "상지건설",
+        "code": "042940",
+        "base_price": 8250,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "비나텍",
+        "code": "126340",
+        "base_price": 107700,
+        "theme": "고체산화물 연료전지(SOFC)"
+      },
+      {
+        "name": "아모센스",
+        "code": "357580",
+        "base_price": 8040,
+        "theme": "고체산화물 연료전지(SOFC)"
+      },
+      {
+        "name": "코세스",
+        "code": "089890",
+        "base_price": 37000,
+        "theme": "고체산화물 연료전지(SOFC)"
+      },
+      {
+        "name": "SK이터닉스",
+        "code": "475150",
+        "base_price": 59400,
+        "theme": "고체산화물 연료전지(SOFC)"
+      },
+      {
+        "name": "비에이치아이",
+        "code": "083650",
+        "base_price": 60400,
+        "theme": "고체산화물 연료전지(SOFC)"
+      }
+    ]
   }
 ]
