@@ -4099,5 +4099,138 @@
         "theme": "고체산화물 연료전지(SOFC)"
       }
     ]
+  },
+  {
+    "date": "2026-07-03",
+    "market": {
+      "date": "2026-07-03",
+      "usd_krw": 1538.05,
+      "rate_chg_pct": -0.68,
+      "vix": 16.15,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "신원종합개발",
+        "code": "017000",
+        "base_price": 3190,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "진흥기업",
+        "code": "002780",
+        "base_price": 1142,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "일성건설",
+        "code": "013360",
+        "base_price": 2045,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "우원개발",
+        "code": "046940",
+        "base_price": 3805,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "동신건설",
+        "code": "025950",
+        "base_price": 15800,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "신한지주",
+        "code": "055550",
+        "base_price": 102200,
+        "theme": "은행"
+      },
+      {
+        "name": "카카오뱅크",
+        "code": "323410",
+        "base_price": 22050,
+        "theme": "은행"
+      },
+      {
+        "name": "BNK금융지주",
+        "code": "138930",
+        "base_price": 18130,
+        "theme": "은행"
+      },
+      {
+        "name": "KB금융",
+        "code": "105560",
+        "base_price": 165000,
+        "theme": "은행"
+      },
+      {
+        "name": "JB금융지주",
+        "code": "175330",
+        "base_price": 25500,
+        "theme": "은행"
+      },
+      {
+        "name": "GS리테일",
+        "code": "007070",
+        "base_price": 25050,
+        "theme": "편의점"
+      },
+      {
+        "name": "BGF리테일",
+        "code": "282330",
+        "base_price": 119500,
+        "theme": "편의점"
+      },
+      {
+        "name": "롯데지주",
+        "code": "004990",
+        "base_price": 24100,
+        "theme": "편의점"
+      },
+      {
+        "name": "유성티엔에스",
+        "code": "024800",
+        "base_price": 4315,
+        "theme": "편의점"
+      },
+      {
+        "name": "이마트",
+        "code": "139480",
+        "base_price": 83500,
+        "theme": "편의점"
+      },
+      {
+        "name": "에피소드컴퍼니",
+        "code": "317530",
+        "base_price": 2685,
+        "theme": "캐릭터상품"
+      },
+      {
+        "name": "데브시스터즈",
+        "code": "194480",
+        "base_price": 17160,
+        "theme": "캐릭터상품"
+      },
+      {
+        "name": "오로라",
+        "code": "039830",
+        "base_price": 17790,
+        "theme": "캐릭터상품"
+      },
+      {
+        "name": "손오공",
+        "code": "066910",
+        "base_price": 2080,
+        "theme": "캐릭터상품"
+      },
+      {
+        "name": "리튬포어스",
+        "code": "073570",
+        "base_price": 1649,
+        "theme": "캐릭터상품"
+      }
+    ]
   }
 ]
