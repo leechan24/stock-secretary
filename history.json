@@ -4232,5 +4232,126 @@
         "theme": "캐릭터상품"
       }
     ]
+  },
+  {
+    "date": "2026-07-06",
+    "market": {
+      "date": "2026-07-06",
+      "usd_krw": 1529.05,
+      "rate_chg_pct": -0.85,
+      "vix": 16.15,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 2425000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 309500,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "DB하이텍",
+        "code": "000990",
+        "base_price": 120700,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 2425000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "삼성전자우",
+        "code": "005935",
+        "base_price": 208000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 309500,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "삼성물산",
+        "code": "028260",
+        "base_price": 433500,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "SK스퀘어",
+        "code": "402340",
+        "base_price": 1589000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "삼성증권",
+        "code": "016360",
+        "base_price": 119100,
+        "theme": "증권"
+      },
+      {
+        "name": "NH투자증권",
+        "code": "005940",
+        "base_price": 31400,
+        "theme": "증권"
+      },
+      {
+        "name": "키움증권",
+        "code": "039490",
+        "base_price": 348500,
+        "theme": "증권"
+      },
+      {
+        "name": "대신증권",
+        "code": "003540",
+        "base_price": 29300,
+        "theme": "증권"
+      },
+      {
+        "name": "SK증권",
+        "code": "001510",
+        "base_price": 2580,
+        "theme": "증권"
+      },
+      {
+        "name": "원풍물산",
+        "code": "008290",
+        "base_price": 369,
+        "theme": "마이크로 LED"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 309500,
+        "theme": "마이크로 LED"
+      },
+      {
+        "name": "라온텍",
+        "code": "418420",
+        "base_price": 3955,
+        "theme": "마이크로 LED"
+      },
+      {
+        "name": "광전자",
+        "code": "017900",
+        "base_price": 6260,
+        "theme": "마이크로 LED"
+      },
+      {
+        "name": "영우디에스피",
+        "code": "143540",
+        "base_price": 1042,
+        "theme": "마이크로 LED"
+      }
+    ]
   }
 ]
