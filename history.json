@@ -4353,5 +4353,126 @@
         "theme": "마이크로 LED"
       }
     ]
+  },
+  {
+    "date": "2026-07-07",
+    "market": {
+      "date": "2026-07-07",
+      "usd_krw": 1530.06,
+      "rate_chg_pct": -0.78,
+      "vix": 15.57,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "금호건설",
+        "code": "002990",
+        "base_price": 12350,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "대원",
+        "code": "007680",
+        "base_price": 5100,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "일성건설",
+        "code": "013360",
+        "base_price": 2085,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "남광토건",
+        "code": "001260",
+        "base_price": 11880,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "동신건설",
+        "code": "025950",
+        "base_price": 16320,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "파세코",
+        "code": "037070",
+        "base_price": 8870,
+        "theme": "제습기"
+      },
+      {
+        "name": "위닉스",
+        "code": "044340",
+        "base_price": 4130,
+        "theme": "제습기"
+      },
+      {
+        "name": "신일전자",
+        "code": "002700",
+        "base_price": 1284,
+        "theme": "제습기"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 318000,
+        "theme": "제습기"
+      },
+      {
+        "name": "코웨이",
+        "code": "021240",
+        "base_price": 95000,
+        "theme": "제습기"
+      },
+      {
+        "name": "GS",
+        "code": "078930",
+        "base_price": 78100,
+        "theme": "정유"
+      },
+      {
+        "name": "S-Oil",
+        "code": "010950",
+        "base_price": 116900,
+        "theme": "정유"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 96500,
+        "theme": "정유"
+      },
+      {
+        "name": "금호타이어",
+        "code": "073240",
+        "base_price": 6160,
+        "theme": "타이어"
+      },
+      {
+        "name": "한국타이어앤테크놀로지",
+        "code": "161390",
+        "base_price": 70500,
+        "theme": "타이어"
+      },
+      {
+        "name": "넥센타이어",
+        "code": "002350",
+        "base_price": 6920,
+        "theme": "타이어"
+      },
+      {
+        "name": "한국앤컴퍼니",
+        "code": "000240",
+        "base_price": 26150,
+        "theme": "타이어"
+      },
+      {
+        "name": "금호석유화학",
+        "code": "011780",
+        "base_price": 116800,
+        "theme": "타이어"
+      }
+    ]
   }
 ]
