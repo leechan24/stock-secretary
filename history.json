@@ -4571,5 +4571,138 @@
         "theme": "코로나19(음압병실/음압구급차)"
       }
     ]
+  },
+  {
+    "date": "2026-07-09",
+    "market": {
+      "date": "2026-07-09",
+      "usd_krw": 1505.57,
+      "rate_chg_pct": -1.52,
+      "vix": 16.9,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "흥구석유",
+        "code": "024060",
+        "base_price": 10440,
+        "theme": "윤활유"
+      },
+      {
+        "name": "한국쉘석유",
+        "code": "002960",
+        "base_price": 517000,
+        "theme": "윤활유"
+      },
+      {
+        "name": "S-Oil",
+        "code": "010950",
+        "base_price": 131600,
+        "theme": "윤활유"
+      },
+      {
+        "name": "미창석유",
+        "code": "003650",
+        "base_price": 140400,
+        "theme": "윤활유"
+      },
+      {
+        "name": "극동유화",
+        "code": "014530",
+        "base_price": 3065,
+        "theme": "윤활유"
+      },
+      {
+        "name": "진영",
+        "code": "285800",
+        "base_price": 921,
+        "theme": "탈 플라스틱(친환경/생분해성 등)"
+      },
+      {
+        "name": "세림B&G",
+        "code": "340440",
+        "base_price": 924,
+        "theme": "탈 플라스틱(친환경/생분해성 등)"
+      },
+      {
+        "name": "에코플라스틱",
+        "code": "038110",
+        "base_price": 2005,
+        "theme": "탈 플라스틱(친환경/생분해성 등)"
+      },
+      {
+        "name": "씨티케이",
+        "code": "260930",
+        "base_price": 2710,
+        "theme": "탈 플라스틱(친환경/생분해성 등)"
+      },
+      {
+        "name": "삼양패키징",
+        "code": "272550",
+        "base_price": 8730,
+        "theme": "탈 플라스틱(친환경/생분해성 등)"
+      },
+      {
+        "name": "흥구석유",
+        "code": "024060",
+        "base_price": 10440,
+        "theme": "LPG(액화석유가스)"
+      },
+      {
+        "name": "S-Oil",
+        "code": "010950",
+        "base_price": 131600,
+        "theme": "LPG(액화석유가스)"
+      },
+      {
+        "name": "중앙에너비스",
+        "code": "000440",
+        "base_price": 13130,
+        "theme": "LPG(액화석유가스)"
+      },
+      {
+        "name": "대성산업",
+        "code": "128820",
+        "base_price": 4165,
+        "theme": "LPG(액화석유가스)"
+      },
+      {
+        "name": "극동유화",
+        "code": "014530",
+        "base_price": 3065,
+        "theme": "LPG(액화석유가스)"
+      },
+      {
+        "name": "광무",
+        "code": "029480",
+        "base_price": 1580,
+        "theme": "NI(네트워크통합)"
+      },
+      {
+        "name": "오픈베이스",
+        "code": "049480",
+        "base_price": 1900,
+        "theme": "NI(네트워크통합)"
+      },
+      {
+        "name": "오파스넷",
+        "code": "173130",
+        "base_price": 6190,
+        "theme": "NI(네트워크통합)"
+      },
+      {
+        "name": "에스넷",
+        "code": "038680",
+        "base_price": 3085,
+        "theme": "NI(네트워크통합)"
+      },
+      {
+        "name": "링네트",
+        "code": "042500",
+        "base_price": 4015,
+        "theme": "NI(네트워크통합)"
+      }
+    ]
   }
 ]
