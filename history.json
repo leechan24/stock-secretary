@@ -4704,5 +4704,138 @@
         "theme": "NI(네트워크통합)"
       }
     ]
+  },
+  {
+    "date": "2026-07-13",
+    "market": {
+      "date": "2026-07-13",
+      "usd_krw": 1498.27,
+      "rate_chg_pct": -0.51,
+      "vix": 15.03,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "기가레인",
+        "code": "049080",
+        "base_price": 5970,
+        "theme": "LED장비"
+      },
+      {
+        "name": "예스티",
+        "code": "122640",
+        "base_price": 31500,
+        "theme": "LED장비"
+      },
+      {
+        "name": "레이저쎌",
+        "code": "412350",
+        "base_price": 6190,
+        "theme": "LED장비"
+      },
+      {
+        "name": "티에스이",
+        "code": "131290",
+        "base_price": 269500,
+        "theme": "LED장비"
+      },
+      {
+        "name": "프로텍",
+        "code": "053610",
+        "base_price": 66200,
+        "theme": "LED장비"
+      },
+      {
+        "name": "빛과전자",
+        "code": "069540",
+        "base_price": 2325,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "대한광통신",
+        "code": "010170",
+        "base_price": 12600,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "한국첨단소재",
+        "code": "062970",
+        "base_price": 1244,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "RF머트리얼즈",
+        "code": "327260",
+        "base_price": 52200,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "머큐리",
+        "code": "100590",
+        "base_price": 3610,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "기가레인",
+        "code": "049080",
+        "base_price": 5970,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "예스티",
+        "code": "122640",
+        "base_price": 31500,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "피에스케이",
+        "code": "319660",
+        "base_price": 189400,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "저스템",
+        "code": "417840",
+        "base_price": 12720,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "레이저쎌",
+        "code": "412350",
+        "base_price": 6190,
+        "theme": "반도체 장비"
+      },
+      {
+        "name": "예스티",
+        "code": "122640",
+        "base_price": 31500,
+        "theme": "HBM(고대역폭메모리)"
+      },
+      {
+        "name": "레이저쎌",
+        "code": "412350",
+        "base_price": 6190,
+        "theme": "HBM(고대역폭메모리)"
+      },
+      {
+        "name": "피에스케이홀딩스",
+        "code": "031980",
+        "base_price": 136200,
+        "theme": "HBM(고대역폭메모리)"
+      },
+      {
+        "name": "케이씨텍",
+        "code": "281820",
+        "base_price": 97400,
+        "theme": "HBM(고대역폭메모리)"
+      },
+      {
+        "name": "윈팩",
+        "code": "097800",
+        "base_price": 2035,
+        "theme": "HBM(고대역폭메모리)"
+      }
+    ]
   }
 ]

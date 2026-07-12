@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-07-09 22:12:40",
+  "last_updated": "2026-07-12 21:38:55",
   "performance": {
-    "oneDay": -1.21,
-    "oneWeek": -7.01,
-    "oneMonth": -11.54,
-    "sixMonth": -20.86
+    "oneDay": 0.0,
+    "oneWeek": -1.25,
+    "oneMonth": -7.32,
+    "sixMonth": -15.97
   }
 }
