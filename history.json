@@ -4970,5 +4970,132 @@
         "theme": "CXL(컴퓨트익스프레스링크)"
       }
     ]
+  },
+  {
+    "date": "2026-07-20",
+    "market": {
+      "date": "2026-07-20",
+      "usd_krw": 1486.53,
+      "rate_chg_pct": 0.52,
+      "vix": 18.77,
+      "status": "주의 ⚠️",
+      "total_weight": "10%~15% (방망이 짧게)"
+    },
+    "picks": [
+      {
+        "name": "비비안",
+        "code": "002070",
+        "base_price": 13800,
+        "theme": "日제품 불매운동(수혜)"
+      },
+      {
+        "name": "모나리자",
+        "code": "012690",
+        "base_price": 2170,
+        "theme": "日제품 불매운동(수혜)"
+      },
+      {
+        "name": "좋은사람들",
+        "code": "033340",
+        "base_price": 530,
+        "theme": "日제품 불매운동(수혜)"
+      },
+      {
+        "name": "PN풍년",
+        "code": "024940",
+        "base_price": 2700,
+        "theme": "日제품 불매운동(수혜)"
+      },
+      {
+        "name": "깨끗한나라",
+        "code": "004540",
+        "base_price": 1907,
+        "theme": "日제품 불매운동(수혜)"
+      },
+      {
+        "name": "동일스틸럭스",
+        "code": "023790",
+        "base_price": 1583,
+        "theme": "조선"
+      },
+      {
+        "name": "한화오션",
+        "code": "042660",
+        "base_price": 86700,
+        "theme": "조선"
+      },
+      {
+        "name": "HD한국조선해양",
+        "code": "009540",
+        "base_price": 354000,
+        "theme": "조선"
+      },
+      {
+        "name": "HD현대중공업",
+        "code": "329180",
+        "base_price": 484000,
+        "theme": "조선"
+      },
+      {
+        "name": "삼성중공업",
+        "code": "010140",
+        "base_price": 22300,
+        "theme": "조선"
+      },
+      {
+        "name": "비비안",
+        "code": "002070",
+        "base_price": 13800,
+        "theme": "마스크"
+      },
+      {
+        "name": "모나리자",
+        "code": "012690",
+        "base_price": 2170,
+        "theme": "마스크"
+      },
+      {
+        "name": "깨끗한나라",
+        "code": "004540",
+        "base_price": 1907,
+        "theme": "마스크"
+      },
+      {
+        "name": "조아제약",
+        "code": "034940",
+        "base_price": 625,
+        "theme": "마스크"
+      },
+      {
+        "name": "웰크론",
+        "code": "065950",
+        "base_price": 1318,
+        "theme": "마스크"
+      },
+      {
+        "name": "현대약품",
+        "code": "004310",
+        "base_price": 7600,
+        "theme": "낙태/피임"
+      },
+      {
+        "name": "명문제약",
+        "code": "017180",
+        "base_price": 1372,
+        "theme": "낙태/피임"
+      },
+      {
+        "name": "알리코제약",
+        "code": "260660",
+        "base_price": 2395,
+        "theme": "낙태/피임"
+      },
+      {
+        "name": "지엘팜텍",
+        "code": "204840",
+        "base_price": 814,
+        "theme": "낙태/피임"
+      }
+    ]
   }
 ]
