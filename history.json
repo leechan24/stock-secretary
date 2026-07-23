@@ -5363,5 +5363,114 @@
         "theme": "건설 대표주"
       }
     ]
+  },
+  {
+    "date": "2026-07-24",
+    "market": {
+      "date": "2026-07-24",
+      "usd_krw": 1474.13,
+      "rate_chg_pct": -0.38,
+      "vix": 18.7,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "LS에코에너지",
+        "code": "229640",
+        "base_price": 52700,
+        "theme": "전선"
+      },
+      {
+        "name": "대원전선",
+        "code": "006340",
+        "base_price": 14200,
+        "theme": "전선"
+      },
+      {
+        "name": "KBI메탈",
+        "code": "024840",
+        "base_price": 4850,
+        "theme": "전선"
+      },
+      {
+        "name": "LS",
+        "code": "006260",
+        "base_price": 321500,
+        "theme": "전선"
+      },
+      {
+        "name": "대한전선",
+        "code": "001440",
+        "base_price": 31000,
+        "theme": "전선"
+      },
+      {
+        "name": "SK이터닉스",
+        "code": "475150",
+        "base_price": 80600,
+        "theme": "고체산화물 연료전지(SOFC)"
+      },
+      {
+        "name": "서진시스템",
+        "code": "178320",
+        "base_price": 42500,
+        "theme": "고체산화물 연료전지(SOFC)"
+      },
+      {
+        "name": "한선엔지니어링",
+        "code": "452280",
+        "base_price": 12000,
+        "theme": "고체산화물 연료전지(SOFC)"
+      },
+      {
+        "name": "금양그린파워",
+        "code": "282720",
+        "base_price": 7580,
+        "theme": "고체산화물 연료전지(SOFC)"
+      },
+      {
+        "name": "두산퓨얼셀",
+        "code": "336260",
+        "base_price": 45950,
+        "theme": "고체산화물 연료전지(SOFC)"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 132200,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "삼성SDI",
+        "code": "006400",
+        "base_price": 467000,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "LG에너지솔루션",
+        "code": "373220",
+        "base_price": 348000,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 132200,
+        "theme": "정유"
+      },
+      {
+        "name": "GS",
+        "code": "078930",
+        "base_price": 93600,
+        "theme": "정유"
+      },
+      {
+        "name": "S-Oil",
+        "code": "010950",
+        "base_price": 149800,
+        "theme": "정유"
+      }
+    ]
   }
 ]
