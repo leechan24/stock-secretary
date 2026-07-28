@@ -5714,5 +5714,126 @@
         "theme": "전자결제(전자화폐)"
       }
     ]
+  },
+  {
+    "date": "2026-07-29",
+    "market": {
+      "date": "2026-07-29",
+      "usd_krw": 1453.6,
+      "rate_chg_pct": -0.3,
+      "vix": 18.21,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "앤씨앤",
+        "code": "092600",
+        "base_price": 2730,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "아이디스",
+        "code": "143160",
+        "base_price": 15800,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "포커스에이아이",
+        "code": "331380",
+        "base_price": 2015,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "코콤",
+        "code": "015710",
+        "base_price": 2540,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "인콘",
+        "code": "083640",
+        "base_price": 1089,
+        "theme": "CCTV＆DVR"
+      },
+      {
+        "name": "유안타제17호스팩",
+        "code": "493790",
+        "base_price": 2020,
+        "theme": "기업인수목적회사(SPAC)"
+      },
+      {
+        "name": "신한제15호스팩",
+        "code": "487830",
+        "base_price": 2025,
+        "theme": "기업인수목적회사(SPAC)"
+      },
+      {
+        "name": "하나34호스팩",
+        "code": "484130",
+        "base_price": 2035,
+        "theme": "기업인수목적회사(SPAC)"
+      },
+      {
+        "name": "앤씨앤",
+        "code": "092600",
+        "base_price": 2730,
+        "theme": "보안주(물리)"
+      },
+      {
+        "name": "시선AI",
+        "code": "340810",
+        "base_price": 2750,
+        "theme": "보안주(물리)"
+      },
+      {
+        "name": "벨로크",
+        "code": "424760",
+        "base_price": 2250,
+        "theme": "보안주(물리)"
+      },
+      {
+        "name": "아이디스",
+        "code": "143160",
+        "base_price": 15800,
+        "theme": "보안주(물리)"
+      },
+      {
+        "name": "슈프리마에이치큐",
+        "code": "094840",
+        "base_price": 13030,
+        "theme": "보안주(물리)"
+      },
+      {
+        "name": "한화리츠",
+        "code": "451800",
+        "base_price": 4990,
+        "theme": "리츠(REITs)"
+      },
+      {
+        "name": "롯데리츠",
+        "code": "330590",
+        "base_price": 3645,
+        "theme": "리츠(REITs)"
+      },
+      {
+        "name": "코람코더원리츠",
+        "code": "417310",
+        "base_price": 10800,
+        "theme": "리츠(REITs)"
+      },
+      {
+        "name": "삼성FN리츠",
+        "code": "448730",
+        "base_price": 5550,
+        "theme": "리츠(REITs)"
+      },
+      {
+        "name": "코람코라이프인프라리츠",
+        "code": "357120",
+        "base_price": 4130,
+        "theme": "리츠(REITs)"
+      }
+    ]
   }
 ]
