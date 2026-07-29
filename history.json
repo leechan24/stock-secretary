@@ -5835,5 +5835,108 @@
         "theme": "리츠(REITs)"
       }
     ]
+  },
+  {
+    "date": "2026-07-30",
+    "market": {
+      "date": "2026-07-30",
+      "usd_krw": 1443.7,
+      "rate_chg_pct": -1.42,
+      "vix": 20.66,
+      "status": "주의 ⚠️",
+      "total_weight": "10%~15% (방망이 짧게)"
+    },
+    "picks": [
+      {
+        "name": "레몬헬스케어",
+        "code": "365660",
+        "base_price": 4120,
+        "theme": "2026 하반기 신규상장"
+      },
+      {
+        "name": "레메디",
+        "code": "387690",
+        "base_price": 7270,
+        "theme": "2026 하반기 신규상장"
+      },
+      {
+        "name": "토비스",
+        "code": "051360",
+        "base_price": 9280,
+        "theme": "카지노"
+      },
+      {
+        "name": "강원랜드",
+        "code": "035250",
+        "base_price": 14450,
+        "theme": "카지노"
+      },
+      {
+        "name": "GKL",
+        "code": "114090",
+        "base_price": 9250,
+        "theme": "카지노"
+      },
+      {
+        "name": "롯데관광개발",
+        "code": "032350",
+        "base_price": 11180,
+        "theme": "카지노"
+      },
+      {
+        "name": "파라다이스",
+        "code": "034230",
+        "base_price": 9630,
+        "theme": "카지노"
+      },
+      {
+        "name": "에스케이증권제13호스팩",
+        "code": "473950",
+        "base_price": 2035,
+        "theme": "기업인수목적회사(SPAC)"
+      },
+      {
+        "name": "이베스트스팩6호",
+        "code": "478110",
+        "base_price": 2040,
+        "theme": "기업인수목적회사(SPAC)"
+      },
+      {
+        "name": "하나30호스팩",
+        "code": "469880",
+        "base_price": 2115,
+        "theme": "기업인수목적회사(SPAC)"
+      },
+      {
+        "name": "STX그린로지스",
+        "code": "465770",
+        "base_price": 2575,
+        "theme": "해운"
+      },
+      {
+        "name": "HMM",
+        "code": "011200",
+        "base_price": 20250,
+        "theme": "해운"
+      },
+      {
+        "name": "KSS해운",
+        "code": "044450",
+        "base_price": 9610,
+        "theme": "해운"
+      },
+      {
+        "name": "팬오션",
+        "code": "028670",
+        "base_price": 4960,
+        "theme": "해운"
+      },
+      {
+        "name": "대한해운",
+        "code": "005880",
+        "base_price": 1680,
+        "theme": "해운"
+      }
+    ]
   }
 ]
