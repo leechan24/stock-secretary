@@ -5938,5 +5938,108 @@
         "theme": "해운"
       }
     ]
+  },
+  {
+    "date": "2026-07-31",
+    "market": {
+      "date": "2026-07-31",
+      "usd_krw": 1422.27,
+      "rate_chg_pct": -2.13,
+      "vix": 17.09,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "레몬헬스케어",
+        "code": "365660",
+        "base_price": 5350,
+        "theme": "2026 하반기 신규상장"
+      },
+      {
+        "name": "레메디",
+        "code": "387690",
+        "base_price": 8020,
+        "theme": "2026 하반기 신규상장"
+      },
+      {
+        "name": "HD한국조선해양",
+        "code": "009540",
+        "base_price": 368500,
+        "theme": "조선"
+      },
+      {
+        "name": "대한조선",
+        "code": "439260",
+        "base_price": 49050,
+        "theme": "조선"
+      },
+      {
+        "name": "한화오션",
+        "code": "042660",
+        "base_price": 79300,
+        "theme": "조선"
+      },
+      {
+        "name": "삼성중공업",
+        "code": "010140",
+        "base_price": 20550,
+        "theme": "조선"
+      },
+      {
+        "name": "HJ중공업",
+        "code": "097230",
+        "base_price": 14290,
+        "theme": "조선"
+      },
+      {
+        "name": "엔비티",
+        "code": "236810",
+        "base_price": 1223,
+        "theme": "토스(toss)"
+      },
+      {
+        "name": "이월드",
+        "code": "084680",
+        "base_price": 514,
+        "theme": "토스(toss)"
+      },
+      {
+        "name": "하나금융지주",
+        "code": "086790",
+        "base_price": 124600,
+        "theme": "토스(toss)"
+      },
+      {
+        "name": "한국전자인증",
+        "code": "041460",
+        "base_price": 3200,
+        "theme": "토스(toss)"
+      },
+      {
+        "name": "한화투자증권",
+        "code": "003530",
+        "base_price": 3675,
+        "theme": "토스(toss)"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 116600,
+        "theme": "정유"
+      },
+      {
+        "name": "S-Oil",
+        "code": "010950",
+        "base_price": 130100,
+        "theme": "정유"
+      },
+      {
+        "name": "GS",
+        "code": "078930",
+        "base_price": 86500,
+        "theme": "정유"
+      }
+    ]
   }
 ]
