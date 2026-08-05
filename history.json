@@ -6428,5 +6428,138 @@
         "theme": "우주항공산업(누리호/인공위성 등)"
       }
     ]
+  },
+  {
+    "date": "2026-08-06",
+    "market": {
+      "date": "2026-08-06",
+      "usd_krw": 1421.99,
+      "rate_chg_pct": -0.46,
+      "vix": 15.81,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "KBI메탈",
+        "code": "024840",
+        "base_price": 4985,
+        "theme": "전선"
+      },
+      {
+        "name": "대원전선",
+        "code": "006340",
+        "base_price": 15450,
+        "theme": "전선"
+      },
+      {
+        "name": "대한전선",
+        "code": "001440",
+        "base_price": 28450,
+        "theme": "전선"
+      },
+      {
+        "name": "LS",
+        "code": "006260",
+        "base_price": 329000,
+        "theme": "전선"
+      },
+      {
+        "name": "일진전기",
+        "code": "103590",
+        "base_price": 61100,
+        "theme": "전선"
+      },
+      {
+        "name": "빛과전자",
+        "code": "069540",
+        "base_price": 2890,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "대한광통신",
+        "code": "010170",
+        "base_price": 12070,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "서울바이오시스",
+        "code": "092190",
+        "base_price": 5940,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "성호전자",
+        "code": "043260",
+        "base_price": 19000,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "RF머트리얼즈",
+        "code": "327260",
+        "base_price": 33750,
+        "theme": "광통신(광케이블/광섬유 등)"
+      },
+      {
+        "name": "코리아써키트",
+        "code": "007810",
+        "base_price": 55400,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "LG이노텍",
+        "code": "011070",
+        "base_price": 601000,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "삼성전기",
+        "code": "009150",
+        "base_price": 1356000,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "태성",
+        "code": "323280",
+        "base_price": 44800,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "인텍플러스",
+        "code": "064290",
+        "base_price": 29600,
+        "theme": "반도체 기판(FC-BGA/PCB/MLB 등)"
+      },
+      {
+        "name": "이노인스트루먼트",
+        "code": "215790",
+        "base_price": 988,
+        "theme": "통신장비"
+      },
+      {
+        "name": "빛과전자",
+        "code": "069540",
+        "base_price": 2890,
+        "theme": "통신장비"
+      },
+      {
+        "name": "오이솔루션",
+        "code": "138080",
+        "base_price": 25150,
+        "theme": "통신장비"
+      },
+      {
+        "name": "기가레인",
+        "code": "049080",
+        "base_price": 10990,
+        "theme": "통신장비"
+      },
+      {
+        "name": "에이스테크",
+        "code": "088800",
+        "base_price": 2080,
+        "theme": "통신장비"
+      }
+    ]
   }
 ]
