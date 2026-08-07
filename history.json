@@ -6561,5 +6561,114 @@
         "theme": "통신장비"
       }
     ]
+  },
+  {
+    "date": "2026-08-07",
+    "market": {
+      "date": "2026-08-07",
+      "usd_krw": 1421.48,
+      "rate_chg_pct": 0.02,
+      "vix": 15.15,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "삼성SDI",
+        "code": "006400",
+        "base_price": 457500,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 113700,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "LG에너지솔루션",
+        "code": "373220",
+        "base_price": 356500,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "BGF리테일",
+        "code": "282330",
+        "base_price": 154800,
+        "theme": "편의점"
+      },
+      {
+        "name": "GS리테일",
+        "code": "007070",
+        "base_price": 27800,
+        "theme": "편의점"
+      },
+      {
+        "name": "이마트",
+        "code": "139480",
+        "base_price": 82000,
+        "theme": "편의점"
+      },
+      {
+        "name": "롯데지주",
+        "code": "004990",
+        "base_price": 23700,
+        "theme": "편의점"
+      },
+      {
+        "name": "유성티엔에스",
+        "code": "024800",
+        "base_price": 4235,
+        "theme": "편의점"
+      },
+      {
+        "name": "S-Oil",
+        "code": "010950",
+        "base_price": 129700,
+        "theme": "정유"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 113700,
+        "theme": "정유"
+      },
+      {
+        "name": "GS",
+        "code": "078930",
+        "base_price": 99800,
+        "theme": "정유"
+      },
+      {
+        "name": "동화기업",
+        "code": "025900",
+        "base_price": 8060,
+        "theme": "2차전지(전고체)"
+      },
+      {
+        "name": "이브이첨단소재",
+        "code": "131400",
+        "base_price": 833,
+        "theme": "2차전지(전고체)"
+      },
+      {
+        "name": "민테크",
+        "code": "452200",
+        "base_price": 1413,
+        "theme": "2차전지(전고체)"
+      },
+      {
+        "name": "삼성SDI",
+        "code": "006400",
+        "base_price": 457500,
+        "theme": "2차전지(전고체)"
+      },
+      {
+        "name": "덕산테코피아",
+        "code": "317330",
+        "base_price": 10950,
+        "theme": "2차전지(전고체)"
+      }
+    ]
   }
 ]
