@@ -6670,5 +6670,114 @@
         "theme": "2차전지(전고체)"
       }
     ]
+  },
+  {
+    "date": "2026-08-10",
+    "market": {
+      "date": "2026-08-10",
+      "usd_krw": 1407.78,
+      "rate_chg_pct": -1.02,
+      "vix": 14.9,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 120300,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "삼성SDI",
+        "code": "006400",
+        "base_price": 459000,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "LG에너지솔루션",
+        "code": "373220",
+        "base_price": 360000,
+        "theme": "2차전지(생산)"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 120300,
+        "theme": "정유"
+      },
+      {
+        "name": "S-Oil",
+        "code": "010950",
+        "base_price": 137600,
+        "theme": "정유"
+      },
+      {
+        "name": "GS",
+        "code": "078930",
+        "base_price": 98900,
+        "theme": "정유"
+      },
+      {
+        "name": "BGF리테일",
+        "code": "282330",
+        "base_price": 153100,
+        "theme": "편의점"
+      },
+      {
+        "name": "GS리테일",
+        "code": "007070",
+        "base_price": 28350,
+        "theme": "편의점"
+      },
+      {
+        "name": "롯데지주",
+        "code": "004990",
+        "base_price": 23700,
+        "theme": "편의점"
+      },
+      {
+        "name": "이마트",
+        "code": "139480",
+        "base_price": 81600,
+        "theme": "편의점"
+      },
+      {
+        "name": "유성티엔에스",
+        "code": "024800",
+        "base_price": 4225,
+        "theme": "편의점"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 120300,
+        "theme": "윤활유"
+      },
+      {
+        "name": "S-Oil",
+        "code": "010950",
+        "base_price": 137600,
+        "theme": "윤활유"
+      },
+      {
+        "name": "흥구석유",
+        "code": "024060",
+        "base_price": 10470,
+        "theme": "윤활유"
+      },
+      {
+        "name": "한국쉘석유",
+        "code": "002960",
+        "base_price": 513000,
+        "theme": "윤활유"
+      },
+      {
+        "name": "극동유화",
+        "code": "014530",
+        "base_price": 3215,
+        "theme": "윤활유"
+      }
+    ]
   }
 ]
