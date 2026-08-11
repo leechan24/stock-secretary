@@ -6906,5 +6906,138 @@
         "theme": "우주항공산업(누리호/인공위성 등)"
       }
     ]
+  },
+  {
+    "date": "2026-08-12",
+    "market": {
+      "date": "2026-08-12",
+      "usd_krw": 1412.27,
+      "rate_chg_pct": 0.37,
+      "vix": 15.28,
+      "status": "주의 ⚠️",
+      "total_weight": "10%~15% (방망이 짧게)"
+    },
+    "picks": [
+      {
+        "name": "남화토건",
+        "code": "091590",
+        "base_price": 5680,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "금호건설",
+        "code": "002990",
+        "base_price": 11490,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "신원종합개발",
+        "code": "017000",
+        "base_price": 2620,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "일성건설",
+        "code": "013360",
+        "base_price": 1611,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "남광토건",
+        "code": "001260",
+        "base_price": 8210,
+        "theme": "건설 중소형"
+      },
+      {
+        "name": "위메이드맥스",
+        "code": "101730",
+        "base_price": 4390,
+        "theme": "게임"
+      },
+      {
+        "name": "NHN",
+        "code": "181710",
+        "base_price": 54200,
+        "theme": "게임"
+      },
+      {
+        "name": "밸로프",
+        "code": "331520",
+        "base_price": 2780,
+        "theme": "게임"
+      },
+      {
+        "name": "위메이드",
+        "code": "112040",
+        "base_price": 19010,
+        "theme": "게임"
+      },
+      {
+        "name": "NC",
+        "code": "036570",
+        "base_price": 255500,
+        "theme": "게임"
+      },
+      {
+        "name": "서산",
+        "code": "079650",
+        "base_price": 5240,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "강동씨앤엘",
+        "code": "198440",
+        "base_price": 1354,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "HC홈센타",
+        "code": "060560",
+        "base_price": 1965,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "동양",
+        "code": "001520",
+        "base_price": 1187,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "HC보광산업",
+        "code": "225530",
+        "base_price": 2070,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "위메이드맥스",
+        "code": "101730",
+        "base_price": 4390,
+        "theme": "모바일게임(스마트폰)"
+      },
+      {
+        "name": "NHN",
+        "code": "181710",
+        "base_price": 54200,
+        "theme": "모바일게임(스마트폰)"
+      },
+      {
+        "name": "밸로프",
+        "code": "331520",
+        "base_price": 2780,
+        "theme": "모바일게임(스마트폰)"
+      },
+      {
+        "name": "위메이드",
+        "code": "112040",
+        "base_price": 19010,
+        "theme": "모바일게임(스마트폰)"
+      },
+      {
+        "name": "위메이드플레이",
+        "code": "123420",
+        "base_price": 6790,
+        "theme": "모바일게임(스마트폰)"
+      }
+    ]
   }
 ]
