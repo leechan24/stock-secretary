@@ -7039,5 +7039,126 @@
         "theme": "모바일게임(스마트폰)"
       }
     ]
+  },
+  {
+    "date": "2026-08-13",
+    "market": {
+      "date": "2026-08-13",
+      "usd_krw": 1416.62,
+      "rate_chg_pct": -0.05,
+      "vix": 14.55,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "일진전기",
+        "code": "103590",
+        "base_price": 72500,
+        "theme": "전선"
+      },
+      {
+        "name": "대원전선",
+        "code": "006340",
+        "base_price": 16030,
+        "theme": "전선"
+      },
+      {
+        "name": "KBI메탈",
+        "code": "024840",
+        "base_price": 5590,
+        "theme": "전선"
+      },
+      {
+        "name": "LS",
+        "code": "006260",
+        "base_price": 337000,
+        "theme": "전선"
+      },
+      {
+        "name": "대한전선",
+        "code": "001440",
+        "base_price": 29450,
+        "theme": "전선"
+      },
+      {
+        "name": "SK스퀘어",
+        "code": "402340",
+        "base_price": 1024000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 255500,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "삼성전기",
+        "code": "009150",
+        "base_price": 1335000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 1504000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "삼성생명",
+        "code": "032830",
+        "base_price": 302500,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "LG전자",
+        "code": "066570",
+        "base_price": 205000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 255500,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "삼성SDI",
+        "code": "006400",
+        "base_price": 485500,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 1504000,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "LG디스플레이",
+        "code": "034220",
+        "base_price": 10120,
+        "theme": "IT 대표주"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 255500,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 1504000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "DB하이텍",
+        "code": "000990",
+        "base_price": 95100,
+        "theme": "반도체 대표주(생산)"
+      }
+    ]
   }
 ]
