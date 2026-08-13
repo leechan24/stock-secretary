@@ -7160,5 +7160,114 @@
         "theme": "반도체 대표주(생산)"
       }
     ]
+  },
+  {
+    "date": "2026-08-14",
+    "market": {
+      "date": "2026-08-14",
+      "usd_krw": 1418.23,
+      "rate_chg_pct": 0.43,
+      "vix": 14.63,
+      "status": "주의 ⚠️",
+      "total_weight": "10%~15% (방망이 짧게)"
+    },
+    "picks": [
+      {
+        "name": "아주IB투자",
+        "code": "027360",
+        "base_price": 4585,
+        "theme": "야놀자(Yanolja)"
+      },
+      {
+        "name": "한화생명",
+        "code": "088350",
+        "base_price": 5030,
+        "theme": "야놀자(Yanolja)"
+      },
+      {
+        "name": "그래디언트",
+        "code": "035080",
+        "base_price": 11820,
+        "theme": "야놀자(Yanolja)"
+      },
+      {
+        "name": "SBI인베스트먼트",
+        "code": "019550",
+        "base_price": 1053,
+        "theme": "야놀자(Yanolja)"
+      },
+      {
+        "name": "한화투자증권",
+        "code": "003530",
+        "base_price": 4630,
+        "theme": "야놀자(Yanolja)"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 1593000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 268000,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "DB하이텍",
+        "code": "000990",
+        "base_price": 99700,
+        "theme": "반도체 대표주(생산)"
+      },
+      {
+        "name": "케이앤에스아이앤씨",
+        "code": "487400",
+        "base_price": 15380,
+        "theme": "2026 하반기 신규상장"
+      },
+      {
+        "name": "레메디",
+        "code": "387690",
+        "base_price": 10340,
+        "theme": "2026 하반기 신규상장"
+      },
+      {
+        "name": "레몬헬스케어",
+        "code": "365660",
+        "base_price": 5380,
+        "theme": "2026 하반기 신규상장"
+      },
+      {
+        "name": "삼성전기",
+        "code": "009150",
+        "base_price": 1503000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "SK스퀘어",
+        "code": "402340",
+        "base_price": 1117000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "SK하이닉스",
+        "code": "000660",
+        "base_price": 1593000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "삼성전자",
+        "code": "005930",
+        "base_price": 268000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      },
+      {
+        "name": "삼성물산",
+        "code": "028260",
+        "base_price": 365000,
+        "theme": "S7(삼성전자/SK하이닉스 등)"
+      }
+    ]
   }
 ]
