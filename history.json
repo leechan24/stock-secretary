@@ -7269,5 +7269,114 @@
         "theme": "S7(삼성전자/SK하이닉스 등)"
       }
     ]
+  },
+  {
+    "date": "2026-08-18",
+    "market": {
+      "date": "2026-08-18",
+      "usd_krw": 1415.3,
+      "rate_chg_pct": -0.11,
+      "vix": 15.19,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "GS",
+        "code": "078930",
+        "base_price": 117000,
+        "theme": "정유"
+      },
+      {
+        "name": "SK이노베이션",
+        "code": "096770",
+        "base_price": 128700,
+        "theme": "정유"
+      },
+      {
+        "name": "S-Oil",
+        "code": "010950",
+        "base_price": 147600,
+        "theme": "정유"
+      },
+      {
+        "name": "수성웹툰",
+        "code": "084180",
+        "base_price": 672,
+        "theme": "웹툰"
+      },
+      {
+        "name": "탑코미디어",
+        "code": "134580",
+        "base_price": 1989,
+        "theme": "웹툰"
+      },
+      {
+        "name": "NHN",
+        "code": "181710",
+        "base_price": 74700,
+        "theme": "웹툰"
+      },
+      {
+        "name": "대원미디어",
+        "code": "048910",
+        "base_price": 5570,
+        "theme": "웹툰"
+      },
+      {
+        "name": "키다리스튜디오",
+        "code": "020120",
+        "base_price": 3840,
+        "theme": "웹툰"
+      },
+      {
+        "name": "한화생명",
+        "code": "088350",
+        "base_price": 5630,
+        "theme": "생명보험"
+      },
+      {
+        "name": "미래에셋생명",
+        "code": "085620",
+        "base_price": 20850,
+        "theme": "생명보험"
+      },
+      {
+        "name": "코리안리",
+        "code": "003690",
+        "base_price": 15290,
+        "theme": "생명보험"
+      },
+      {
+        "name": "삼성생명",
+        "code": "032830",
+        "base_price": 301000,
+        "theme": "생명보험"
+      },
+      {
+        "name": "동양생명",
+        "code": "082640",
+        "base_price": 8250,
+        "theme": "생명보험"
+      },
+      {
+        "name": "SK텔레콤",
+        "code": "017670",
+        "base_price": 100500,
+        "theme": "통신"
+      },
+      {
+        "name": "LG유플러스",
+        "code": "032640",
+        "base_price": 15060,
+        "theme": "통신"
+      },
+      {
+        "name": "KT",
+        "code": "030200",
+        "base_price": 53400,
+        "theme": "통신"
+      }
+    ]
   }
 ]
