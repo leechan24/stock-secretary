@@ -7378,5 +7378,138 @@
         "theme": "통신"
       }
     ]
+  },
+  {
+    "date": "2026-08-20",
+    "market": {
+      "date": "2026-08-20",
+      "usd_krw": 1386.3,
+      "rate_chg_pct": -2.01,
+      "vix": 14.89,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "인디에프",
+        "code": "014990",
+        "base_price": 3110,
+        "theme": "남북경협"
+      },
+      {
+        "name": "좋은사람들",
+        "code": "033340",
+        "base_price": 557,
+        "theme": "남북경협"
+      },
+      {
+        "name": "아난티",
+        "code": "025980",
+        "base_price": 5350,
+        "theme": "남북경협"
+      },
+      {
+        "name": "조비",
+        "code": "001550",
+        "base_price": 12410,
+        "theme": "남북경협"
+      },
+      {
+        "name": "현대건설",
+        "code": "000720",
+        "base_price": 116500,
+        "theme": "남북경협"
+      },
+      {
+        "name": "조비",
+        "code": "001550",
+        "base_price": 12410,
+        "theme": "태풍 및 장마"
+      },
+      {
+        "name": "하이드로리튬",
+        "code": "101670",
+        "base_price": 616,
+        "theme": "태풍 및 장마"
+      },
+      {
+        "name": "남해화학",
+        "code": "025860",
+        "base_price": 6080,
+        "theme": "태풍 및 장마"
+      },
+      {
+        "name": "뉴보텍",
+        "code": "060260",
+        "base_price": 1272,
+        "theme": "태풍 및 장마"
+      },
+      {
+        "name": "경농",
+        "code": "002100",
+        "base_price": 9310,
+        "theme": "태풍 및 장마"
+      },
+      {
+        "name": "덱스터",
+        "code": "206560",
+        "base_price": 1046,
+        "theme": "영화"
+      },
+      {
+        "name": "쎄니트",
+        "code": "037760",
+        "base_price": 2430,
+        "theme": "영화"
+      },
+      {
+        "name": "쇼박스",
+        "code": "086980",
+        "base_price": 2040,
+        "theme": "영화"
+      },
+      {
+        "name": "CJ ENM",
+        "code": "035760",
+        "base_price": 32000,
+        "theme": "영화"
+      },
+      {
+        "name": "콘텐트리중앙",
+        "code": "036420",
+        "base_price": 1529,
+        "theme": "영화"
+      },
+      {
+        "name": "조비",
+        "code": "001550",
+        "base_price": 12410,
+        "theme": "비료"
+      },
+      {
+        "name": "체시스",
+        "code": "033250",
+        "base_price": 3870,
+        "theme": "비료"
+      },
+      {
+        "name": "남해화학",
+        "code": "025860",
+        "base_price": 6080,
+        "theme": "비료"
+      },
+      {
+        "name": "효성오앤비",
+        "code": "097870",
+        "base_price": 4840,
+        "theme": "비료"
+      },
+      {
+        "name": "누보",
+        "code": "332290",
+        "base_price": 895,
+        "theme": "비료"
+      }
+    ]
   }
 ]
