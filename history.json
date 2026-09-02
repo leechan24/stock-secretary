@@ -7511,5 +7511,138 @@
         "theme": "비료"
       }
     ]
+  },
+  {
+    "date": "2026-09-03",
+    "market": {
+      "date": "2026-09-03",
+      "usd_krw": 1358.91,
+      "rate_chg_pct": -0.56,
+      "vix": 15.2,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": [
+      {
+        "name": "STX그린로지스",
+        "code": "465770",
+        "base_price": 3925,
+        "theme": "해운"
+      },
+      {
+        "name": "흥아해운",
+        "code": "003280",
+        "base_price": 1712,
+        "theme": "해운"
+      },
+      {
+        "name": "KSS해운",
+        "code": "044450",
+        "base_price": 9920,
+        "theme": "해운"
+      },
+      {
+        "name": "팬오션",
+        "code": "028670",
+        "base_price": 5510,
+        "theme": "해운"
+      },
+      {
+        "name": "대한해운",
+        "code": "005880",
+        "base_price": 2010,
+        "theme": "해운"
+      },
+      {
+        "name": "좋은사람들",
+        "code": "033340",
+        "base_price": 625,
+        "theme": "남북경협"
+      },
+      {
+        "name": "남화토건",
+        "code": "091590",
+        "base_price": 8030,
+        "theme": "남북경협"
+      },
+      {
+        "name": "제이에스티나",
+        "code": "026040",
+        "base_price": 2615,
+        "theme": "남북경협"
+      },
+      {
+        "name": "다스코",
+        "code": "058730",
+        "base_price": 3940,
+        "theme": "남북경협"
+      },
+      {
+        "name": "남광토건",
+        "code": "001260",
+        "base_price": 8030,
+        "theme": "남북경협"
+      },
+      {
+        "name": "서산",
+        "code": "079650",
+        "base_price": 6790,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "HC홈센타",
+        "code": "060560",
+        "base_price": 2065,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "부산산업",
+        "code": "011390",
+        "base_price": 52900,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "HC보광산업",
+        "code": "225530",
+        "base_price": 2125,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "SG",
+        "code": "255220",
+        "base_price": 1084,
+        "theme": "시멘트/레미콘"
+      },
+      {
+        "name": "좋은사람들",
+        "code": "033340",
+        "base_price": 625,
+        "theme": "日제품 불매운동(수혜)"
+      },
+      {
+        "name": "배럴",
+        "code": "267790",
+        "base_price": 3590,
+        "theme": "日제품 불매운동(수혜)"
+      },
+      {
+        "name": "그리티",
+        "code": "204020",
+        "base_price": 1919,
+        "theme": "日제품 불매운동(수혜)"
+      },
+      {
+        "name": "보해양조",
+        "code": "000890",
+        "base_price": 1340,
+        "theme": "日제품 불매운동(수혜)"
+      },
+      {
+        "name": "해태제과식품",
+        "code": "101530",
+        "base_price": 5620,
+        "theme": "日제품 불매운동(수혜)"
+      }
+    ]
   }
 ]
