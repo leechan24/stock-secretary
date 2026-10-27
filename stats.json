@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-10-25 22:55:38",
+  "last_updated": "2026-10-27 00:07:53",
   "performance": {
     "oneDay": 0.0,
     "oneWeek": 0.0,
     "oneMonth": 0.0,
-    "sixMonth": -13.67
+    "sixMonth": NaN
   }
 }
