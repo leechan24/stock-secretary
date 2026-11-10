@@ -7824,5 +7824,17 @@
       "total_weight": "0%~5% (관망)"
     },
     "picks": []
+  },
+  {
+    "date": "2026-11-10",
+    "market": {
+      "date": "2026-11-10",
+      "usd_krw": 1346.88,
+      "rate_chg_pct": -1.16,
+      "vix": 19.92,
+      "status": "안정 ✅",
+      "total_weight": "20%~40% (공격적 투자)"
+    },
+    "picks": []
   }
 ]
