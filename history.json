@@ -7872,5 +7872,17 @@
       "total_weight": "10%~15% (방망이 짧게)"
     },
     "picks": []
+  },
+  {
+    "date": "2026-11-20",
+    "market": {
+      "date": "2026-11-20",
+      "usd_krw": 1337.38,
+      "rate_chg_pct": 0.52,
+      "vix": 28.44,
+      "status": "경계 🚨",
+      "total_weight": "0%~5% (관망)"
+    },
+    "picks": []
   }
 ]
