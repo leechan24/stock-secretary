@@ -7884,5 +7884,17 @@
       "total_weight": "0%~5% (관망)"
     },
     "picks": []
+  },
+  {
+    "date": "2026-11-27",
+    "market": {
+      "date": "2026-11-27",
+      "usd_krw": 1341.48,
+      "rate_chg_pct": -0.11,
+      "vix": 26.8,
+      "status": "경계 🚨",
+      "total_weight": "0%~5% (관망)"
+    },
+    "picks": []
   }
 ]
